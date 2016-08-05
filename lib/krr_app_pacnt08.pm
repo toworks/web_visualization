@@ -474,22 +474,34 @@ sub get_tree {
 
 	my $menu = '<h5>Demo 6, created from an html list</h5>'."\n";
 	$menu .= '<div id="demo6_menu">'."\n";
-	$menu .= '<ui>'."\n";
+	$menu .= '<ul>'."\n";
 	my $c = 0;
+	my $head = 0;
 	foreach (@$result) {
 #		print STDERR $_->{rn}."\n";
-		if ( $_->{type} eq 'folder' ) {
+		if ( $_->{type} eq 'folder' and $_->{level} == 0 ) {
+			print STDERR "head | $head\n";
+			$menu .= '</ul></ul>'."\n" if $head == 1;
+			$head-- if $head == 1;
+			$menu .= "<li class=\"isFolder\" title=\"Bookmarks\"> $_->{rn} | head = $head "."\n";
+			$menu .= '<ul>'."\n";
+			$head++ if $head == 0;
+		}
+		
+		if ( $_->{type} eq 'folder' and $_->{level} != 0 ) {
 			$menu .= '</ul>'."\n" if $c == 1;
 			$c-- if $c == 1;
 			$menu .= "<li class=\"isFolder\" title=\"Bookmarks\"> $_->{rn}"."\n";
 			$menu .= '<ul>'."\n";
 			$c++ if $c == 0;
 		}
+
 		if (  $_->{type} eq 'node' ) {
+			$menu .= '</ul>'."\n" if $_->{level} == 0;
 			$menu .=  "<li><a href=\"$_->{link}\" target=\"rightside\">Go to $_->{rn}</a></li>"."\n";
 		}
 	}
-	$menu .= '</ul>'."\n";
+#	$menu .= '</ul>'."\n";
 	
 	$menu .= '</ul>'."\n";
 	$menu .= '</div>'."\n";
