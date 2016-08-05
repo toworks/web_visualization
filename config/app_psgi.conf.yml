@@ -1,0 +1,8 @@
+
+hosts:
+ 'http://localhost/':
+        app: krr_app_pacnt08
+        enable: true
+        mssql:
+            host: KRR-TST-PAHWL02\SQLEXPRESS
+            database: KRR-PA-DEV-Development
