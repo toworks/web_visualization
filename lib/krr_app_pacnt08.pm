@@ -62,11 +62,11 @@ sub call {
         $tpl = sprintf $tpl, $node;
         $tpl .= $self->read_template($path_tpl, "footer") if $url->{url} ne 'main';
 
-=comm
+
         my $year = strftime("%Y", localtime time());
         $tpl =~ s/\|host\|/$env->{HTTP_HOST}/g;
         $tpl =~ s/\|year\|/$year/g;
-
+=comm
         $tpl =~ s/\|root_url\|/$root_url/g;
 
         my $page = join "\n", map { s/dropdown\"\>/active dropdown\"\>/ if $url->{url} eq 'tools';# при добавлении локального меню надо пересмотреть работу
@@ -475,42 +475,109 @@ sub get_tree {
 	my $menu = '<h5>Demo 6, created from an html list</h5>'."\n";
 	$menu .= '<div id="demo6_menu">'."\n";
 	$menu .= '<ul>'."\n";
-	my $c = 0;
-	my $head = 0;
+
+	my $level = 0;
+	my $root = 0;
+	my $folder = 0;
+	my $folder_curr = 0;
+	my $node = 0;
+
+#	$menu .= $self->get_level($result, 5);
+#	$menu .= $self->get_node($result, 5);
+
 	foreach (@$result) {
-#		print STDERR $_->{rn}."\n";
-		if ( $_->{type} eq 'folder' and $_->{level} == 0 ) {
-			print STDERR "head | $head\n";
-			$menu .= '</ul></ul>'."\n" if $head == 1;
-			$head-- if $head == 1;
-			$menu .= "<li class=\"isFolder\" title=\"Bookmarks\"> $_->{rn} | head = $head "."\n";
-			$menu .= '<ul>'."\n";
-			$head++ if $head == 0;
+		if ( $_->{level} == 0 ) {
+			$menu .= $self->get_level($result, $_->{id});
+			$menu .= $self->get_node($result, $_->{id});
 		}
-		
-		if ( $_->{type} eq 'folder' and $_->{level} != 0 ) {
-			$menu .= '</ul>'."\n" if $c == 1;
-			$c-- if $c == 1;
-			$menu .= "<li class=\"isFolder\" title=\"Bookmarks\"> $_->{rn}"."\n";
+	}
+
+=comm
+	foreach (@$result) {
+#		print STDERR $_->{rn}."\n";	
+		if ( $_->{type} eq 'folder' ) {
+			if ( $root == 1 and $_->{level} == 0 ) {
+			#	$menu .= '</ul>'."\n";
+				$root--;
+				$menu .= '</ul>'."\n" for(1..$level);
+			}
+			
+			$root++ if ( $root == 0 and $_->{level} == 0 );
+			
+			#$menu .= '</ul>'."\n" if ( $_->{level} != $level and $_->{level} != 0 );
+			
+			$level = $_->{level} if ( $_->{level} != $level and $_->{level} != 0 );
+
+			#if ( $folder != $folder_curr and $_->{level} != $level ) {
+#			if ( $_->{level} != $level ) {
+#				$menu .= '</ul>'."\n";
+#			}
+			
+#			if ( $folder != $folder_curr ) {
+			if ( $folder != $folder_curr ) {
+				$menu .= '**</ul>**'."\n";# for(1..$level);
+			}# elsif ( $folder = $folder_curr and $_->{level} != 0 ) { $menu .= '+</ul>+'."\n"; }
+			
+			$folder_curr = 0 if ( $_->{level} == 0 );
+			$folder_curr++ if ( $_->{level} != 0 );
+			
+			
+			$menu .= "<li class=\"isFolder\" title=\"Bookmarks\"> $_->{rn} | level = $_->{level} | root | $root"."\n";
 			$menu .= '<ul>'."\n";
-			$c++ if $c == 0;
 		}
 
 		if (  $_->{type} eq 'node' ) {
-			$menu .= '</ul>'."\n" if $_->{level} == 0;
-			$menu .=  "<li><a href=\"$_->{link}\" target=\"rightside\">Go to $_->{rn}</a></li>"."\n";
+#			if ($_->{level} == 0) {
+#				$menu .= '+</ul>+'."\n";# for(1..$level);
+#			}
+			$menu .=  "<li><a href=\"$_->{link}\" target=\"rightside\">Go to $_->{rn} | level = $_->{level}</a></li>"."\n";
 		}
 	}
-#	$menu .= '</ul>'."\n";
-	
+=cut	
 	$menu .= '</ul>'."\n";
 	$menu .= '</div>'."\n";
 	$menu .= '<script>'."\n";
     $menu .= ' $(\'#demo6_menu\').easytree(); '."\n";
 	$menu .= '</script>'."\n";
+
 	print STDERR $menu."\n";
 	return $menu;
 }
 
+sub get_level {
+	my($self, $data, $parent) = @_;
+	
+	my $menu;
+
+	foreach (@$data) {
+		if ( $_->{type} eq 'folder' and $_->{parent} == $parent ) {
+			$menu .= "<li class=\"isFolder\" title=\"Bookmarks\"> $_->{rn} | level = $_->{level}"."\n";
+			$menu .= '<ul>'."\n";
+			$menu .= $self->get_node($data, $_->{id});
+			$menu .= '</ul>'."\n";
+			$menu .= $self->get_level($data, $_->{id});
+		}
+
+#		if (  $_->{type} eq 'node' and $_->{parent} == $parent ) {
+#			$menu .=  "<li><a href=\"$_->{link}\" target=\"rightside\">Go to $_->{rn} | level = $_->{level}</a></li>"."\n";
+#		}
+	}
+	return $menu;
+}
+
+sub get_node {
+	my($self, $data, $parent) = @_;
+	
+	my $menu;
+
+	foreach (@$data) {
+		if (  $_->{type} eq 'node' and $_->{parent} == $parent ) {
+			$menu .=  "<li><a href=\"$_->{link}\" target=\"rightside\">Go to $_->{rn} | level = $_->{level}</a></li>"."\n";
+		}
+	}	
+	return $menu;
+}
+
 1;
+
 
