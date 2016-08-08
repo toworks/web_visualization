@@ -472,95 +472,46 @@ sub get_tree {
     my $result = $self->{sql}->select_sql( $query );
 #	print STDERR Dumper( $result);
 
-	my $menu = '<h5>Demo 6, created from an html list</h5>'."\n";
-	$menu .= '<div id="demo6_menu">'."\n";
+	my $menu = '<div id="menu1">'."\n";
 	$menu .= '<ul>'."\n";
-
-	my $level = 0;
-	my $root = 0;
-	my $folder = 0;
-	my $folder_curr = 0;
-	my $node = 0;
-
-#	$menu .= $self->get_level($result, 5);
-#	$menu .= $self->get_node($result, 5);
 
 	foreach (@$result) {
 		if ( $_->{level} == 0 ) {
-			$menu .= $self->get_level($result, $_->{id});
-			$menu .= $self->get_node($result, $_->{id});
-		}
-	}
-
-=comm
-	foreach (@$result) {
-#		print STDERR $_->{rn}."\n";	
-		if ( $_->{type} eq 'folder' ) {
-			if ( $root == 1 and $_->{level} == 0 ) {
-			#	$menu .= '</ul>'."\n";
-				$root--;
-				$menu .= '</ul>'."\n" for(1..$level);
+			if ( $_->{type} eq 'folder' ) {
+				$menu .= "<li class=\"isFolder\" title=\"Bookmarks\"> $_->{rn} | level = $_->{level}"."\n";
+				$menu .= '<ul>'."\n";
 			}
-			
-			$root++ if ( $root == 0 and $_->{level} == 0 );
-			
-			#$menu .= '</ul>'."\n" if ( $_->{level} != $level and $_->{level} != 0 );
-			
-			$level = $_->{level} if ( $_->{level} != $level and $_->{level} != 0 );
-
-			#if ( $folder != $folder_curr and $_->{level} != $level ) {
-#			if ( $_->{level} != $level ) {
-#				$menu .= '</ul>'."\n";
-#			}
-			
-#			if ( $folder != $folder_curr ) {
-			if ( $folder != $folder_curr ) {
-				$menu .= '**</ul>**'."\n";# for(1..$level);
-			}# elsif ( $folder = $folder_curr and $_->{level} != 0 ) { $menu .= '+</ul>+'."\n"; }
-			
-			$folder_curr = 0 if ( $_->{level} == 0 );
-			$folder_curr++ if ( $_->{level} != 0 );
-			
-			
-			$menu .= "<li class=\"isFolder\" title=\"Bookmarks\"> $_->{rn} | level = $_->{level} | root | $root"."\n";
-			$menu .= '<ul>'."\n";
-		}
-
-		if (  $_->{type} eq 'node' ) {
-#			if ($_->{level} == 0) {
-#				$menu .= '+</ul>+'."\n";# for(1..$level);
-#			}
-			$menu .=  "<li><a href=\"$_->{link}\" target=\"rightside\">Go to $_->{rn} | level = $_->{level}</a></li>"."\n";
+			$menu .= $self->get_folder($result, $_->{id}) || '';
+			$menu .= $self->get_node($result, $_->{id}) || '';
+			$menu .= '</ul>'."\n" if ( $_->{type} eq 'folder' );
 		}
 	}
-=cut	
+
 	$menu .= '</ul>'."\n";
 	$menu .= '</div>'."\n";
 	$menu .= '<script>'."\n";
-    $menu .= ' $(\'#demo6_menu\').easytree(); '."\n";
+    $menu .= ' $(\'#menu1\').easytree(); '."\n";
 	$menu .= '</script>'."\n";
+	$menu .= '</div>'."\n";
 
 	print STDERR $menu."\n";
 	return $menu;
 }
 
-sub get_level {
+sub get_folder {
 	my($self, $data, $parent) = @_;
 	
 	my $menu;
-
+	
 	foreach (@$data) {
+		$_->{parent} ||= -1;
 		if ( $_->{type} eq 'folder' and $_->{parent} == $parent ) {
 			$menu .= "<li class=\"isFolder\" title=\"Bookmarks\"> $_->{rn} | level = $_->{level}"."\n";
 			$menu .= '<ul>'."\n";
 			$menu .= $self->get_node($data, $_->{id});
 			$menu .= '</ul>'."\n";
-			$menu .= $self->get_level($data, $_->{id});
+			$menu .= $self->get_folder($data, $_->{id}) || '';
 		}
-
-#		if (  $_->{type} eq 'node' and $_->{parent} == $parent ) {
-#			$menu .=  "<li><a href=\"$_->{link}\" target=\"rightside\">Go to $_->{rn} | level = $_->{level}</a></li>"."\n";
-#		}
 	}
 	return $menu;
 }
@@ -571,8 +522,9 @@ sub get_node {
 	my $menu;
 
 	foreach (@$data) {
+		$_->{parent} ||= -1;
 		if (  $_->{type} eq 'node' and $_->{parent} == $parent ) {
-			$menu .=  "<li><a href=\"$_->{link}\" target=\"rightside\">Go to $_->{rn} | level = $_->{level}</a></li>"."\n";
+			$menu .=  "<li><a href=\"".decode_entities( $_->{link} )."\" target=\"rightside\">Go to $_->{rn} | level = $_->{level}</a></li>"."\n";
 		}
 	}	
 	return $menu;

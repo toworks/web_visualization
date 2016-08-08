@@ -1,3 +1,18 @@
+/*body {
+    margin: 10px;
+}*/
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 10px;
+}
+
+.tree {
+	margin-left: 1px;
+/*	padding-left: 10px;
+	padding-right: 250px;*/
+}
+	
 /* Gradient color1 - color2 - color1 */
 hr.style-one {
     border: 0;

@@ -1,4 +1,4 @@
-
+<!--
     <footer class="footer">
       <div class="container">
         <p class="text-muted"> <h5>2013 - |year| 
@@ -6,7 +6,7 @@
         </p>
       </div>
     </footer>
-
+-->
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
