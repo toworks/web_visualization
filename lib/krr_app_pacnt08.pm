@@ -1,6 +1,11 @@
 package krr_app_pacnt08;
 use strict;
 use warnings;
+use utf8;
+binmode(STDIN,  ':utf8');
+binmode(STDOUT, ':utf8');
+binmode(STDERR, ':utf8');
+
 use parent qw/Plack::Middleware/;
 use parent qw(Plack::App::File);
 use Plack::Response;
@@ -9,7 +14,6 @@ use Plack::Util::Accessor qw( conf );
 use Plack::Util;
 use mssql;
 
-#use utf8;
 use POSIX ('strftime');
 use HTML::Entities;
 use Data::Dumper;
@@ -165,21 +169,6 @@ sub get_url_check {
 #print STDERR Dumper($result);
 #    return $result;
     return (grep {defined($_)} @{$result}) ? 'true' : 'false';
-}
-
-
-sub get_metatag {
-    my($self, $url) = @_;
-
-    my $query = "select * from pages p join metatag m on p.id = m.pid where p.url = '$url->{url}'";
-    my $result = $self->{sql}->select_sql($query);
-
-#    print STDERR Dumper($result);
-
-    return ('404 Not Found', 'Oops!', '404 Not Found') unless grep {defined($_)} @{$result};
-#    print STDERR @{$result}[0]->{title};
-#    print STDERR Dumper($result);
-    return ( @{$result}[0]->{title}, @{$result}[0]->{keywords}, @{$result}[0]->{description} );
 }
 
 
@@ -510,7 +499,9 @@ sub get_folder {
 			$menu .= '<ul>'."\n";
 			$menu .= $self->get_node($data, $_->{id});
 			$menu .= '</ul>'."\n";
+			$menu .= '<ul>'."\n";
 			$menu .= $self->get_folder($data, $_->{id}) || '';
+			$menu .= '</ul>'."\n";
 		}
 	}
 	return $menu;

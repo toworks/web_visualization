@@ -6,3 +6,10 @@ hosts:
         mssql:
             host: KRR-TST-PAHWL02\SQLEXPRESS
             database: KRR-PA-DEV-Development
+ 
+ 'http://krr-app-pacnt08/':
+        app: krr_app_pacnt08
+        enable: true
+        mssql:
+            host: KRR-TST-PAHWL02\SQLEXPRESS
+            database: KRR-PA-DEV-Development
