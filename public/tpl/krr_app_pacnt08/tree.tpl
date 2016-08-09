@@ -15,4 +15,4 @@
 	</div>-->
 
 <div class="container tree">
-  <h2>Menu</h2>
+  <h2><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Menu</h2>

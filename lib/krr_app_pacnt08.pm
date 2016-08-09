@@ -5,6 +5,7 @@ use utf8;
 binmode(STDIN,  ':utf8');
 binmode(STDOUT, ':utf8');
 binmode(STDERR, ':utf8');
+use Encode;
 
 use parent qw/Plack::Middleware/;
 use parent qw(Plack::App::File);
@@ -63,7 +64,10 @@ sub call {
 		$node .= $self->get_tree;
 
 #        $node .= '<div class="text-center" id="timestamp"><p><h4><span class="label label-info">'. strftime("%A %d %B %Y %H:%M:%S", localtime time()) .'</span></h4></p></div>';
-        $tpl = sprintf $tpl, $node;
+		#$tpl = encode_utf8($tpl);
+		#$node = encode_utf8($node);
+
+        $tpl = sprintf  encode_utf8($tpl), encode_utf8($node);
         $tpl .= $self->read_template($path_tpl, "footer") if $url->{url} ne 'main';
 
 
@@ -467,7 +471,8 @@ sub get_tree {
 	foreach (@$result) {
 		if ( $_->{level} == 0 ) {
 			if ( $_->{type} eq 'folder' ) {
-				$menu .= "<li class=\"isFolder\" title=\"Bookmarks\"> $_->{rn} | level = $_->{level}"."\n";
+				#$menu .= "<li class=\"isFolder\" title=\"Bookmarks\"> $_->{rn} | level = $_->{level}"."\n";
+				$menu .= "<li class=\"isFolder\" title=\"Bookmarks\"> $_->{name}"."\n";
 				$menu .= '<ul>'."\n";
 			}
 			$menu .= $self->get_folder($result, $_->{id}) || '';
@@ -495,13 +500,19 @@ sub get_folder {
 	foreach (@$data) {
 		$_->{parent} ||= -1;
 		if ( $_->{type} eq 'folder' and $_->{parent} == $parent ) {
-			$menu .= "<li class=\"isFolder\" title=\"Bookmarks\"> $_->{rn} | level = $_->{level}"."\n";
-			$menu .= '<ul>'."\n";
-			$menu .= $self->get_node($data, $_->{id});
-			$menu .= '</ul>'."\n";
+			#$menu .= "<li class=\"isFolder\" title=\"Bookmarks\"> $_->{rn} | level = $_->{level}"."\n";
+			$menu .= "<li class=\"isFolder\" title=\"Bookmarks\"> $_->{name}"."\n";
+			
 			$menu .= '<ul>'."\n";
 			$menu .= $self->get_folder($data, $_->{id}) || '';
 			$menu .= '</ul>'."\n";
+			
+			$menu .= '<ul>'."\n";
+			$menu .= $self->get_node($data, $_->{id});
+			$menu .= '</ul>'."\n";
+#			$menu .= '<ul>'."\n";
+#			$menu .= $self->get_folder($data, $_->{id}) || '';
+#			$menu .= '</ul>'."\n";
 		}
 	}
 	return $menu;
@@ -515,7 +526,8 @@ sub get_node {
 	foreach (@$data) {
 		$_->{parent} ||= -1;
 		if (  $_->{type} eq 'node' and $_->{parent} == $parent ) {
-			$menu .=  "<li><a href=\"".decode_entities( $_->{link} )."\" target=\"rightside\">Go to $_->{rn} | level = $_->{level}</a></li>"."\n";
+			#$menu .=  "<li><a href=\"".decode_entities( $_->{link} )."\" target=\"rightside\">Go to $_->{rn} | level = $_->{level}</a></li>"."\n";
+			$menu .=  "<li><a href=\"". decode_entities( $_->{link} ) ."\" target=\"rightside\"> $_->{name}</a></li>"."\n";
 		}
 	}	
 	return $menu;
