@@ -6,13 +6,6 @@
 
 	<!-- easytree js -->
     <script src="/styles/easy_tree/jquery.easytree.min.js"></script>
-<!--	
-	<div id="content">
-
-		<div class="content_box">
-
-		</div>
-	</div>-->
 
 <div class="container tree">
   <h2><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Menu</h2>

@@ -913,3 +913,148 @@
 2016-08-09 11:55:54.301 INFO	connected mssql
 2016-08-09 11:57:42.543 INFO	connected mssql
 2016-08-09 11:57:43.157 INFO	connected mssql
+2016-08-09 12:11:27.977 INFO	connected mssql
+2016-08-09 12:11:29.100 INFO	connected mssql
+2016-08-09 12:20:43.987 INFO	connected mssql
+2016-08-09 12:20:45.126 INFO	connected mssql
+2016-08-09 12:43:30.783 INFO	connected mssql
+2016-08-09 12:43:31.188 INFO	connected mssql
+2016-08-09 12:50:43.870 INFO	connected mssql
+2016-08-09 12:50:44.500 ERROR	Unable to fetch information about the error at lib/mssql.pm line 40.
+2016-08-09 12:50:44.501 ERROR	Can't call method "prepare_cached" on unblessed reference at lib/mssql.pm line 165.
+2016-08-09 12:50:48.746 INFO	connected mssql
+2016-08-09 12:50:49.514 INFO	connected mssql
+2016-08-09 12:50:52.776 INFO	connected mssql
+2016-08-09 12:50:53.699 INFO	connected mssql
+2016-08-09 12:51:06.431 ERROR	Unable to fetch information about the error at lib/mssql.pm line 40.
+2016-08-09 12:51:06.432 ERROR	Can't call method "prepare_cached" on unblessed reference at lib/mssql.pm line 165.
+2016-08-09 12:51:11.616 ERROR	Unable to fetch information about the error at lib/mssql.pm line 40.
+2016-08-09 12:51:11.617 ERROR	Can't call method "prepare_cached" on unblessed reference at lib/mssql.pm line 165.
+2016-08-09 12:51:15.771 INFO	connected mssql
+2016-08-09 12:52:04.986 INFO	connected mssql
+2016-08-09 12:54:10.619 INFO	connected mssql
+2016-08-09 12:54:29.132 INFO	connected mssql
+2016-08-09 12:54:42.572 INFO	connected mssql
+2016-08-09 12:54:57.632 INFO	connected mssql
+2016-08-09 12:55:03.429 INFO	connected mssql
+2016-08-09 12:55:03.890 ERROR	Unable to fetch information about the error at lib/mssql.pm line 40.
+2016-08-09 12:55:03.891 ERROR	Can't call method "prepare_cached" on unblessed reference at lib/mssql.pm line 165.
+2016-08-09 12:55:06.024 ERROR	Unable to fetch information about the error at lib/mssql.pm line 40.
+2016-08-09 12:55:06.025 ERROR	Can't call method "prepare_cached" on unblessed reference at lib/mssql.pm line 165.
+2016-08-09 12:55:06.678 INFO	connected mssql
+2016-08-09 13:05:21.487 INFO	connected mssql
+2016-08-09 13:05:21.978 ERROR	Unable to fetch information about the error at lib/mssql.pm line 40.
+2016-08-09 13:05:21.979 ERROR	Can't call method "prepare_cached" on unblessed reference at lib/mssql.pm line 165.
+2016-08-09 13:05:24.640 INFO	connected mssql
+2016-08-09 13:05:25.079 INFO	connected mssql
+2016-08-09 13:09:11.239 ERROR	Unable to fetch information about the error at lib/mssql.pm line 40.
+2016-08-09 13:09:11.242 ERROR	Can't call method "prepare_cached" on unblessed reference at lib/mssql.pm line 165.
+2016-08-09 13:09:11.296 ERROR	Unable to fetch information about the error at lib/mssql.pm line 40.
+2016-08-09 13:09:11.297 ERROR	Can't call method "prepare_cached" on unblessed reference at lib/mssql.pm line 165.
+2016-08-09 13:09:12.638 ERROR	Unable to fetch information about the error at lib/mssql.pm line 40.
+2016-08-09 13:09:12.639 ERROR	Can't call method "prepare_cached" on unblessed reference at lib/mssql.pm line 165.
+2016-08-09 13:09:13.476 INFO	connected mssql
+2016-08-09 13:10:54.800 ERROR	Unable to fetch information about the error at lib/mssql.pm line 40.
+2016-08-09 13:10:54.801 ERROR	Can't call method "prepare_cached" on unblessed reference at lib/mssql.pm line 165.
+2016-08-09 13:10:55.456 INFO	connected mssql
+2016-08-09 13:13:11.144 INFO	connected mssql
+2016-08-09 13:13:11.874 INFO	connected mssql
+2016-08-09 13:20:16.804 INFO	connected mssql
+2016-08-09 13:20:16.976 ERROR	[Microsoft][ODBC SQL Server Driver][SQL Server]Invalid object name 'node'. (SQL-42S02) [state was 42S02 now 42000]
+[Microsoft][ODBC SQL Server Driver][SQL Server]Statement(s) could not be prepared. (SQL-42000) at lib/mssql.pm line 166.
+2016-08-09 13:22:41.635 INFO	connected mssql
+2016-08-09 13:22:41.757 ERROR	[Microsoft][ODBC SQL Server Driver][SQL Server]Invalid object name 'node'. (SQL-42S02) [state was 42S02 now 42000]
+[Microsoft][ODBC SQL Server Driver][SQL Server]Statement(s) could not be prepared. (SQL-42000) at lib/mssql.pm line 166.
+2016-08-09 13:24:40.952 ERROR	No such file or directory at lib/krr_app_pacnt08.pm line 94.
+2016-08-09 13:24:41.396 INFO	connected mssql
+2016-08-09 13:24:42.345 INFO	connected mssql
+2016-08-09 13:25:55.383 INFO	connected mssql
+2016-08-09 13:25:56.126 INFO	connected mssql
+2016-08-09 13:29:07.235 INFO	connected mssql
+2016-08-09 13:29:08.338 INFO	connected mssql
+2016-08-09 13:29:08.886 INFO	connected mssql
+2016-08-09 13:29:09.665 INFO	connected mssql
+2016-08-09 13:29:34.069 INFO	connected mssql
+2016-08-09 13:31:01.837 INFO	connected mssql
+2016-08-09 13:31:02.025 ERROR	Unable to fetch information about the error at lib/mssql.pm line 40.
+2016-08-09 13:31:02.027 ERROR	Can't call method "prepare_cached" on unblessed reference at lib/mssql.pm line 165.
+2016-08-09 13:31:05.175 ERROR	Unable to fetch information about the error at lib/mssql.pm line 40.
+2016-08-09 13:31:05.176 ERROR	Can't call method "prepare_cached" on unblessed reference at lib/mssql.pm line 165.
+2016-08-09 13:31:05.557 INFO	connected mssql
+2016-08-09 13:32:55.403 INFO	connected mssql
+2016-08-09 13:33:47.710 INFO	connected mssql
+2016-08-09 13:33:47.917 INFO	connected mssql
+2016-08-09 13:33:50.516 INFO	connected mssql
+2016-08-09 13:33:50.651 ERROR	Unable to fetch information about the error at lib/mssql.pm line 40.
+2016-08-09 13:33:50.652 ERROR	Can't call method "prepare_cached" on unblessed reference at lib/mssql.pm line 165.
+2016-08-09 13:33:50.787 INFO	connected mssql
+2016-08-09 13:35:03.098 INFO	connected mssql
+2016-08-09 13:35:03.538 INFO	connected mssql
+2016-08-09 13:35:03.561 INFO	connected mssql
+2016-08-09 13:35:30.777 INFO	connected mssql
+2016-08-09 13:35:31.077 ERROR	No such file or directory at lib/krr_app_pacnt08.pm line 94.
+2016-08-09 13:35:31.358 INFO	connected mssql
+2016-08-09 13:35:31.360 INFO	connected mssql
+2016-08-09 13:36:34.683 INFO	connected mssql
+2016-08-09 13:36:34.993 ERROR	No such file or directory at lib/krr_app_pacnt08.pm line 94.
+2016-08-09 13:36:35.213 INFO	connected mssql
+2016-08-09 13:36:35.235 INFO	connected mssql
+2016-08-09 13:36:38.979 INFO	connected mssql
+2016-08-09 13:36:39.209 ERROR	Unable to fetch information about the error at lib/mssql.pm line 40.
+2016-08-09 13:36:39.211 ERROR	Can't call method "prepare_cached" on unblessed reference at lib/mssql.pm line 165.
+2016-08-09 13:36:39.480 INFO	connected mssql
+2016-08-09 13:36:40.019 INFO	connected mssql
+2016-08-09 13:36:46.038 INFO	connected mssql
+2016-08-09 13:36:46.220 ERROR	No such file or directory at lib/krr_app_pacnt08.pm line 94.
+2016-08-09 13:36:46.437 INFO	connected mssql
+2016-08-09 13:36:46.453 INFO	connected mssql
+2016-08-09 13:36:47.053 INFO	connected mssql
+2016-08-09 13:37:37.585 INFO	connected mssql
+2016-08-09 13:37:38.079 INFO	connected mssql
+2016-08-09 13:37:38.071 INFO	connected mssql
+2016-08-09 13:37:38.894 INFO	connected mssql
+2016-08-09 13:37:41.806 INFO	connected mssql
+2016-08-09 13:37:42.269 INFO	connected mssql
+2016-08-09 13:37:42.270 INFO	connected mssql
+2016-08-09 13:37:43.052 INFO	connected mssql
+2016-08-09 13:38:40.613 INFO	connected mssql
+2016-08-09 13:39:20.387 INFO	connected mssql
+2016-08-09 13:47:40.207 INFO	connected mssql
+2016-08-09 13:49:33.344 INFO	connected mssql
+2016-08-09 13:50:18.380 INFO	connected mssql
+2016-08-09 13:51:01.309 INFO	connected mssql
+2016-08-09 13:51:07.677 INFO	connected mssql
+2016-08-09 13:52:20.459 INFO	connected mssql
+2016-08-09 13:54:59.145 INFO	connected mssql
+2016-08-09 13:57:56.361 INFO	connected mssql
+2016-08-09 13:58:43.053 INFO	connected mssql
+2016-08-09 14:00:50.556 INFO	connected mssql
+2016-08-09 14:01:31.336 ERROR	Unable to fetch information about the error at lib/mssql.pm line 40.
+2016-08-09 14:01:31.337 ERROR	Can't call method "prepare_cached" on unblessed reference at lib/mssql.pm line 165.
+2016-08-09 14:02:37.690 INFO	connected mssql
+2016-08-09 14:03:05.648 INFO	connected mssql
+2016-08-09 14:05:50.460 INFO	connected mssql
+2016-08-09 14:07:57.078 INFO	connected mssql
+2016-08-09 14:08:44.748 INFO	connected mssql
+2016-08-09 14:09:38.331 INFO	connected mssql
+2016-08-09 14:09:58.744 INFO	connected mssql
+2016-08-09 14:10:05.905 ERROR	Unable to fetch information about the error at lib/mssql.pm line 40.
+2016-08-09 14:10:05.907 ERROR	Can't call method "prepare_cached" on unblessed reference at lib/mssql.pm line 165.
+2016-08-09 14:10:08.333 ERROR	Unable to fetch information about the error at lib/mssql.pm line 40.
+2016-08-09 14:10:08.334 ERROR	Can't call method "prepare_cached" on unblessed reference at lib/mssql.pm line 165.
+2016-08-09 14:10:17.187 INFO	connected mssql
+2016-08-09 14:10:25.359 INFO	connected mssql
+2016-08-09 14:10:52.154 ERROR	Unable to fetch information about the error at lib/mssql.pm line 40.
+2016-08-09 14:10:52.155 ERROR	Can't call method "prepare_cached" on unblessed reference at lib/mssql.pm line 165.
+2016-08-09 14:11:01.598 INFO	connected mssql
+2016-08-09 14:11:30.923 INFO	connected mssql
+2016-08-09 14:11:52.284 INFO	connected mssql
+2016-08-09 14:12:45.844 INFO	connected mssql
+2016-08-09 14:12:57.290 INFO	connected mssql
+2016-08-09 14:17:30.114 INFO	connected mssql
+2016-08-09 14:17:58.305 INFO	connected mssql
+2016-08-09 14:21:28.328 INFO	connected mssql
+2016-08-09 14:25:17.311 INFO	connected mssql
+2016-08-09 14:35:15.467 INFO	connected mssql
+2016-08-09 14:35:36.720 INFO	connected mssql
+2016-08-09 14:36:04.207 INFO	connected mssql
