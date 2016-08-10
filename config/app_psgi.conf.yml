@@ -6,10 +6,12 @@ hosts:
         mssql:
             host: KRR-TST-PAHWL02\SQLEXPRESS
             database: KRR-PA-DEV-Development
+            table: menu
  
  'http://krr-app-pacnt08/':
         app: krr_app_pacnt08
         enable: true
         mssql:
-            host: KRR-TST-PAHWL02\SQLEXPRESS
-            database: KRR-PA-DEV-Development
+            host: KRR-PA-GLB-SERVICE
+            database: KRR-PA-GLB-SERVICE
+            table: visualization_menu

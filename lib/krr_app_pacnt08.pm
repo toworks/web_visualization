@@ -107,7 +107,7 @@ sub get_menu {
 
     my $menu;
 
-    my $query = 'select * from menu where hidden = 0 order by level asc';
+    my $query = "select * from $self->conf->{mssql}->{table} where hidden = 0 order by level asc";
     my $result = $self->{sql}->select_sql( $query );
 
     foreach (@$result) {
