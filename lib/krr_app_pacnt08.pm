@@ -107,7 +107,7 @@ sub get_menu {
 
     my $menu;
 
-    my $query = "select * from $self->conf->{mssql}->{table} where hidden = 0 order by level asc";
+    my $query = "select * from menu where hidden = 0 order by level asc";
     my $result = $self->{sql}->select_sql( $query );
 
     foreach (@$result) {
@@ -205,18 +205,18 @@ sub get_tree {
 	$query .= '( ';
 	$query .= 'SELECT id, parent, 0 as level, name, type, link, ';
     $query .= 'convert(varchar(max),right(row_number() over (order by id),10)) rn ';
-	$query .= 'FROM menu ';
+	$query .= "FROM ".$self->conf->{mssql}->{table}." ";
 	$query .= 'WHERE parent is null ';
 	$query .= 'UNION ALL ';
 	$query .= 'SELECT c2.id, c2.parent, tree.level + 1, c2.name, c2.type, c2.link, ';
 	$query .= 'rn + \'/\' + convert(varchar(max),right(row_number() over (order by tree.id),10)) ';
-	$query .= 'FROM [KRR-PA-DEV-Development]..menu c2 ';
+	$query .= "FROM ".$self->conf->{mssql}->{table}." c2 ";
     $query .= 'INNER JOIN tree ON tree.id = c2.parent ';
 	$query .= ') ';
 	$query .= 'SELECT * FROM tree order by rn ';
 
     my $result = $self->{sql}->select_sql( $query );
-#	print STDERR Dumper( $result);
+	print STDERR Dumper( $result);
 
 	my $menu = '<div id="menu1">'."\n";
 	$menu .= '<ul>'."\n";

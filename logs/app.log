@@ -14,3 +14,21 @@
 2016-08-10 09:37:45.473 ERROR	Can't call method "prepare_cached" on unblessed reference at lib/mssql.pm line 165.
 2016-08-10 13:40:40.993 INFO	connected mssql
 2016-08-10 13:41:44.472 INFO	connected mssql
+2016-08-10 14:47:11.448 INFO	connected mssql
+2016-08-10 14:47:11.544 ERROR	[Microsoft][ODBC SQL Server Driver]Ошибка синтаксиса или нарушение прав доступа (SQL-42000) at lib/mssql.pm line 165.
+2016-08-10 14:48:34.668 INFO	connected mssql
+2016-08-10 14:49:48.979 INFO	connected mssql
+2016-08-10 14:50:16.792 INFO	connected mssql
+2016-08-10 14:51:07.446 INFO	connected mssql
+2016-08-10 14:52:14.655 INFO	connected mssql
+2016-08-10 14:53:06.458 INFO	connected mssql
+2016-08-10 14:54:03.700 INFO	connected mssql
+2016-08-10 14:55:19.867 INFO	connected mssql
+2016-08-10 14:55:19.920 ERROR	[Microsoft][ODBC SQL Server Driver][SQL Server]Incorrect syntax near the keyword 'FROM'. (SQL-42000)
+[Microsoft][ODBC SQL Server Driver][SQL Server]Statement(s) could not be prepared. (SQL-42000) at lib/mssql.pm line 166.
+2016-08-10 14:56:29.478 INFO	connected mssql
+2016-08-10 14:56:29.505 ERROR	[Microsoft][ODBC SQL Server Driver]Ошибка синтаксиса или нарушение прав доступа (SQL-42000) at lib/mssql.pm line 165.
+2016-08-10 14:57:31.561 INFO	connected mssql
+2016-08-10 14:57:31.622 ERROR	[Microsoft][ODBC SQL Server Driver][SQL Server]Incorrect syntax near the keyword 'FROM'. (SQL-42000)
+[Microsoft][ODBC SQL Server Driver][SQL Server]Statement(s) could not be prepared. (SQL-42000) at lib/mssql.pm line 166.
+2016-08-10 14:57:59.920 INFO	connected mssql

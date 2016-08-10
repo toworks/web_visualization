@@ -12,6 +12,6 @@ hosts:
         app: krr_app_pacnt08
         enable: true
         mssql:
-            host: KRR-SQL-PACLX02\PACLX02
+            host: KRR-SQL-PACLX02
             database: KRR-PA-GLB-SERVICE
             table: visualization_menu
