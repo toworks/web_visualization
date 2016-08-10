@@ -8,7 +8,7 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 
-CREATE TABLE [dbo].[menu](
+CREATE TABLE [dbo].[visualization_menu](
 	[id] [int] IDENTITY(1,1) NOT NULL,
 	[name] [nvarchar](500) NOT NULL,
 	[link] [nvarchar](4000) NOT NULL,
@@ -22,8 +22,8 @@ PRIMARY KEY CLUSTERED
 
 GO
 
-ALTER TABLE [dbo].[menu]  WITH CHECK ADD FOREIGN KEY([parent])
-REFERENCES [dbo].[menu] ([id])
+ALTER TABLE [dbo].[visualization_menu]  WITH CHECK ADD FOREIGN KEY([parent])
+REFERENCES [dbo].[visualization_menu] ([id])
 GO
 
 
