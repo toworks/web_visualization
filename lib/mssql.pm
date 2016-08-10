@@ -161,6 +161,16 @@ package mssql;{
 
     $self->conn() if ( $self->{error} == 1 );
 
+	my $count = 0;
+
+	if ( $self->{error} == 1 ) {
+		while ($count < 10) {
+			if ( $self->{error} == 1 ) { $self->conn(); }else{ last; }
+			$self->{log}->save('e', "reconnect count $count ".$self->{error});
+			$count++;
+		}
+	}
+
     $self->{dbh}->{AutoCommit} = 0;
     eval{ $sth = $self->{dbh}->prepare_cached($query) || die "$DBI::errstr";
           $sth->execute() || die "$DBI::errstr";
