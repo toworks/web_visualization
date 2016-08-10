@@ -216,7 +216,7 @@ sub get_tree {
 	$query .= 'SELECT * FROM tree order by rn ';
 
     my $result = $self->{sql}->select_sql( $query );
-	print STDERR Dumper( $result);
+#	print STDERR Dumper( $result);
 
 	my $menu = '<div id="menu1">'."\n";
 	$menu .= '<ul>'."\n";
@@ -241,7 +241,7 @@ sub get_tree {
 	$menu .= '</script>'."\n";
 	$menu .= '</div>'."\n";
 
-	print STDERR $menu."\n";
+#	print STDERR $menu."\n";
 	return $menu;
 }
 

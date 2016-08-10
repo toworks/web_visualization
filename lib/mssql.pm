@@ -38,7 +38,8 @@ package mssql;{
   sub conn {
     my($self) = @_;
     eval{ $self->{dbh} = DBI->connect("dbi:ODBC:$self->{dsn}") || die "$DBI::errstr"; };
-    if ($@) { $self->{log}->save('e', "$@"); $self->{error} = 1; } else { $self->{log}->save('i', "connected mssql"); $self->{error} = 0; }
+#    if ($@) { $self->{log}->save('e', "$@"); $self->{error} = 1; } else { $self->{log}->save('i', "connected mssql"); $self->{error} = 0; }
+    if ($@) { $self->{log}->save('e', "$@"); $self->{error} = 1; } else { $self->{error} = 0; }
   }
 
   sub get_host {
@@ -166,8 +167,8 @@ package mssql;{
 	if ( $self->{error} == 1 ) {
 		while ($count < 10) {
 			if ( $self->{error} == 1 ) { $self->conn(); }else{ last; }
-			$self->{log}->save('e', "reconnect count $count ".$self->{error});
 			$count++;
+			$self->{log}->save('e', "reconnect count $count");
 		}
 	}
 
