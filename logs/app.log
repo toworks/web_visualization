@@ -50,3 +50,5 @@
 2016-08-11 14:27:10.376 ERROR	reconnect count 1
 2016-08-11 14:46:45.310 ERROR	Unable to fetch information about the error at lib/mssql.pm line 40.
 2016-08-11 14:46:45.825 ERROR	reconnect count 1
+2016-08-11 15:21:44.809 ERROR	[Microsoft][ODBC SQL Server Driver][SQL Server]Invalid object name 'menu'. (SQL-42S02) [state was 42S02 now 42000]
+[Microsoft][ODBC SQL Server Driver][SQL Server]Statement(s) could not be prepared. (SQL-42000) at lib/mssql.pm line 177.

@@ -225,7 +225,7 @@ sub get_tree {
 		if ( $_->{level} == 0 ) {
 			if ( $_->{type} eq 'folder' ) {
 				#$menu .= "<li class=\"isFolder\" title=\"Bookmarks\"> $_->{rn} | level = $_->{level}"."\n";
-				$menu .= "<li class=\"isFolder\" title=\"Bookmarks\"> $_->{name}"."\n";
+				$menu .= "<li class=\"isFolder\" title=\"$_->{name}\"> $_->{name}"."\n";
 				$menu .= '<ul>'."\n";
 			}
 			$menu .= $self->get_folder($result, $_->{id}) || '';
@@ -254,7 +254,7 @@ sub get_folder {
 		$_->{parent} ||= -1;
 		if ( $_->{type} eq 'folder' and $_->{parent} == $parent ) {
 			#$menu .= "<li class=\"isFolder\" title=\"Bookmarks\"> $_->{rn} | level = $_->{level}"."\n";
-			$menu .= "<li class=\"isFolder\" title=\"Bookmarks\"> $_->{name}"."\n";
+			$menu .= "<li class=\"isFolder\" title=\"$_->{name}\"> $_->{name}"."\n";
 			
 			$menu .= '<ul>'."\n";
 			$menu .= $self->get_folder($data, $_->{id}) || '';

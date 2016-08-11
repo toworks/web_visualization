@@ -4,9 +4,9 @@ hosts:
         app: krr_app_pacnt08
         enable: true
         mssql:
-            host: KRR-TST-PAHWL02\SQLEXPRESS
-            database: KRR-PA-DEV-Development
-            table: menu
+            host: KRR-SQL-PACLX02
+            database: KRR-PA-GLB-SERVICE
+            table: visualization_menu
  
  'http://krr-app-pacnt08/':
         app: krr_app_pacnt08
