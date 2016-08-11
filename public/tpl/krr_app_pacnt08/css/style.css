@@ -8,7 +8,8 @@ body {
 }
 
 .tree {
-	margin-left: 1px;
+	margin-left: -10px;
+	margin-right: -12px;
 /*	padding-left: 10px;
 	padding-right: 250px;*/
 }
