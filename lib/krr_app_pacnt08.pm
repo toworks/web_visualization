@@ -261,7 +261,7 @@ sub get_folder {
 			$menu .= '</ul>'."\n";
 			
 			$menu .= '<ul>'."\n";
-			$menu .= $self->get_node($data, $_->{id});
+			$menu .= $self->get_node($data, $_->{id}) || '';
 			$menu .= '</ul>'."\n";
 #			$menu .= '<ul>'."\n";
 #			$menu .= $self->get_folder($data, $_->{id}) || '';
