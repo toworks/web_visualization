@@ -262,6 +262,9 @@ insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu
 values( 46, N'Информация о расходе раскислителей КЦ', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSteelmaking%2f%u0420%u0430%u0441%u0445%u043e%u0434+%u0440%u0430%u0441%u043a%u0438%u0441%u043b%u0438%u0442%u0435%u043b%u0435%u0439+%u043f%u043e+%u041a%u0426&amp;rs%3aCommand=Render', N'node', 44)
 insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
 ( [id], [name], [link], [type], [parent] )
+values( 135, N'Отчет по ферросплавам | Report ferroalloys', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSteelmaking%2freport_ferroalloys&rs:Command=Render', N'node', 44)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
+( [id], [name], [link], [type], [parent] )
 values( 79, N'Хим. анализ стали', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSteelmaking%2f%u041e%u0442%u0447%u0435%u0442+%u041c%u041d%u041b%u0417+(%u0410%u043d%u0430%u043b%u0438%u0437+%u0441%u0442%u0430%u043b%u0438)&amp;rs%3aCommand=Render', N'node', 77)
 insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
 ( [id], [name], [link], [type], [parent] )
