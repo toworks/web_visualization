@@ -223,6 +223,9 @@ insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu
 values( 51, N'Учет простоев КЦ | DMS BOF №1-6', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fManagers%2fDMS_K4&amp;rs%3aCommand=Render', N'node', 41)
 insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
 ( [id], [name], [link], [type], [parent] )
+values( 136, N'Учет простоев КЦ-3 стадии | DMS BOF-3 stages', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSteelmaking%2fdms_steelmaking_stages&rs:Command=Render', N'node', 41)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
+( [id], [name], [link], [type], [parent] )
 values( 56, N'1. Текущие значения КЦ | Online BOF values', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fWater+supply%2fWater_supply_tables_BOF&amp;rs%3aCommand=Render', N'node', 42)
 insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
 ( [id], [name], [link], [type], [parent] )
