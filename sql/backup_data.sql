@@ -319,6 +319,9 @@ insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu
 values( 112, N'Линде Газ текущие параметры | Linde Gas current', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fEnergy%2fLindeGas_current&amp;rs%3aCommand=Render', N'node', 104)
 insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
 ( [id], [name], [link], [type], [parent] )
+values( 138, N'Почасовый отчет по пару | Hourly report steam', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fEnergy%2fLindeGas_steam_hour_report&rs:Command=Render', N'node', 104)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
+( [id], [name], [link], [type], [parent] )
 values( 133, N'Выгрузка материалов ДП', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSinter+and+Blast%2fBF_load_material&amp;rs%3aCommand=Render', N'node', 115)
 insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
 ( [id], [name], [link], [type], [parent] )
