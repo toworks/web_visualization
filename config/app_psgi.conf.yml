@@ -15,3 +15,11 @@ hosts:
             host: KRR-SQL-PACLX02
             database: KRR-PA-GLB-SERVICE
             table: visualization_menu
+
+ 'http://krr-app-pacnt08.europe.mittalco.com/':
+        app: krr_app_pacnt08
+        enable: true
+        mssql:
+            host: KRR-SQL-PACLX02
+            database: KRR-PA-GLB-SERVICE
+            table: visualization_menu
