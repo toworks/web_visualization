@@ -274,6 +274,9 @@ insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu
 values( 79, N'Хим. анализ стали', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSteelmaking%2f%u041e%u0442%u0447%u0435%u0442+%u041c%u041d%u041b%u0417+(%u0410%u043d%u0430%u043b%u0438%u0437+%u0441%u0442%u0430%u043b%u0438)&amp;rs%3aCommand=Render', N'node', 77)
 insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
 ( [id], [name], [link], [type], [parent] )
+values( 139, N'Отчет МНЛЗ', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/?%2fProductivity%2fSteelmaking%2f%d0%9e%d1%82%d1%87%d0%b5%d1%82+%d0%9c%d0%9d%d0%9b%d0%97+%d0%be%d0%b1%d1%89%d0%b8%d0%b9&rs:Command=Render', N'node', 77)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
+( [id], [name], [link], [type], [parent] )
 values( 80, N'Химический анализ шлака', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSteelmaking%2f%u041e%u0442%u0447%u0435%u0442+%u0423%u041f%u041a+(%u0410%u043d%u0430%u043b%u0438%u0437+%u0448%u043b%u0430%u043a%u0430)&amp;rs%3aCommand=Render', N'node', 78)
 insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
 ( [id], [name], [link], [type], [parent] )
