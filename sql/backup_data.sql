@@ -307,6 +307,9 @@ insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu
 values( 102, N'Расход N2 на КЦ | Flow N2 on BOF', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSteelmaking%2fFlow+N2+on+BOF&amp;rs%3aCommand=Render', N'node', 93)
 insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
 ( [id], [name], [link], [type], [parent] )
+values( 140, N'Расход О2 на плавку КЦ | Flow O2 for heat BOF', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSteelmaking%2fBOF_Flow_O2_for+heat&rs:Command=Render', N'node', 93)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
+( [id], [name], [link], [type], [parent] )
 values( 99, N'График технологических операций', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSteelmaking%2fMixer_stages&amp;rs%3aCommand=Render', N'node', 97)
 insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
 ( [id], [name], [link], [type], [parent] )
