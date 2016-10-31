@@ -289,6 +289,12 @@ insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu
 values( 82, N'Отчет УПК', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSteelmaking%2f%u041e%u0442%u0447%u0435%u0442+%u0423%u041f%u041a+%u043e%u0431%u0449%u0438%u0439&amp;rs%3aCommand=Render', N'node', 78)
 insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
 ( [id], [name], [link], [type], [parent] )
+values( 143, N'Сплавы и добавки на порцию', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSteelmaking%2fUPK_SplavDobav_porc&rs:Command=Render', N'node', 78)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
+( [id], [name], [link], [type], [parent] )
+values( 144, N'Сплавы и добавки общие', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSteelmaking%2fUPK_SplavDobav_All&rs:Command=Render', N'node', 78)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
+( [id], [name], [link], [type], [parent] )
 values( 87, N'Графики', N'none', N'folder', 83)
 insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
 ( [id], [name], [link], [type], [parent] )
@@ -332,6 +338,9 @@ values( 138, N'Почасовый отчет по пару | Hourly report steam
 insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
 ( [id], [name], [link], [type], [parent] )
 values( 133, N'Выгрузка материалов ДП', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSinter+and+Blast%2fBF_load_material&amp;rs%3aCommand=Render', N'node', 115)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
+( [id], [name], [link], [type], [parent] )
+values( 142, N'Технологические параметры средние за час', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSinter+and+Blast%2fTechnological+parameters+average_per_hour&rs:Command=Render', N'node', 115)
 insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
 ( [id], [name], [link], [type], [parent] )
 values( 127, N'Уровень засыпи печи | BF burden level', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fManagers%2fBF_burden+level&amp;rs%3aCommand=Render', N'node', 116)
