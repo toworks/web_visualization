@@ -48,7 +48,7 @@ sub call {
 
         my $tpl = $self->get_header($url, $path_tpl);
 		
-		$tpl = $self->read_template($path_tpl, "frame") if $url->{url} eq 'main';
+		$tpl = decode_utf8($self->read_template($path_tpl, "frame")) if $url->{url} eq 'main';
 
 #        $tpl .= $self->read_template($path_tpl, "menu");
 #        my $menu = $self->get_menu;
