@@ -3,14 +3,10 @@
 	<HEAD>
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<!--		<meta charset="windows-1251">-->
-<!--		<META content="IE=5.0000" http-equiv="X-UA-Compatible">-->
-<!--		<META http-equiv="Content-Type" content="text/html; charset=windows-1251">-->
-<!--		<META name="GENERATOR" content="MSHTML 11.00.9600.18525">-->
-<!--			<LINK href="styles/bootstrap/css/bootstrap.min.css" rel="stylesheet">-->
-<!--			<LINK href="styles/lightbox/css/lightbox.min.css" rel="stylesheet"> 	 -->
-<!--			<LINK href="styles/openwebicons/css/openwebicons-bootstrap.css" rel="stylesheet">-->
-<!--			<LINK href="styles/font-awesome/css/font-awesome.min.css" rel="stylesheet">	 -->
+		<LINK href="styles/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<LINK href="styles/lightbox/css/lightbox.min.css" rel="stylesheet"> 	 
+		<LINK href="styles/openwebicons/css/openwebicons-bootstrap.css" rel="stylesheet">
+		<LINK href="styles/font-awesome/css/font-awesome.min.css" rel="stylesheet">	 
 	</HEAD>
 <body>
 <!--===========================================================================================================-->
@@ -66,7 +62,6 @@
 			height: 96%;
 			width:  30%; 
 			clear: left; 
-/*			clear: right;*/
 			float: left;
 /*			z-index: 1*/
 		}
@@ -75,26 +70,23 @@
 /*			background-color: rgb(221, 230, 241);*/
 			height: 96%;
 			width:  70%;
-/*			clear: right;*/
 			float:  left;
 /*			z-index: 2*/
 		}
 		#footer { height: 5%;   width:100%; clear: left; clear: right; float: right;}
 		#target { height: 100%; width:100%; clear: left; border: 0}
 		iframe{height: 100%; width:100%; 
+			
+		}
+		#content>iframe{
 			position: absolute;
 		}
+		
 		.topBtnGroup
 		{
 			align-content: center;
 		}
 	</style>
-<!--
- <LINK href="visalization_files/tree_files/bootstrap.min.css" rel="stylesheet">
- <LINK href="start_files/lightbox.min.css" rel="stylesheet"> 	 
- <LINK href="visalization_files/tree_files/openwebicons-bootstrap.css" rel="stylesheet">
- <LINK href="visalization_files/tree_files/font-awesome.min.css" rel="stylesheet">
--->
 
 <!--===========================================================================================================-->
 <script type="text/javascript">
@@ -111,7 +103,7 @@
 			a.style.width = "0%"; 
 			b.style.width = "100%";	 
 			flag=0;		
-			a.style.visibility = "hidden";
+			//a.style.visibility = "hidden";
 			}
 		
 		else if(flag==0){
@@ -124,7 +116,7 @@
 		
 	}
 </script>
-<script>
+<script type="text/javascript">
 	function urlRightside(n)
 		{
 			
@@ -144,7 +136,8 @@
 				if(style.zIndex=="100")
 				{
 					contchild[i].style.zIndex=frameR.style.zIndex;//-"+style.zIndex);
-					frameR.style.visibility = "hidden";
+					contchild[i].style.visibility = "hidden";
+					
 				}
 			}
 			
@@ -154,7 +147,6 @@
 		}
 			if (frameR.style.visibility=="hidden") frameR.style.visibility="visible";
 			
-			
 			if(n=="fr2")
 			{url="https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%%2fProductivity%%2fEnergy%%2fDashboard_O2&rs:Command=Render";}
 			if(n=="fr3"){url="http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%%2fProductivity%%2fManagers%%2fBF_Cold+blast+flow&amp;rs%%3aCommand=Render";}
@@ -162,75 +154,24 @@
 			if(n=="fr5"){url="https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%%2fProductivity%%2fEnergy%%2fWater_supply_tables_for_ED&rs:Command=Render";}
 			if(n=="fr6"){url="https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%%2fProductivity%%2fSteelmaking%%2fOxygen_BOF1-6&rs:Command=Render";}
 			if(n=="fr7"){url="http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%%2fProductivity%%2fEnergy%%2fLindeGas_online&rs%%3aCommand=Render";}
-			if(n=="fr8") {url="http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%%2fProductivity%%2fEnergy%%2fLindeGas_current&rs%%3aCommand=Render";}			
+			if(n=="fr8") {url="http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%%2fProductivity%%2fEnergy%%2fLindeGas_current&rs%%3aCommand=Render";}
 
+//<!--====for local test==================================================================================================-->		
+/*
+			{url="https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fEnergy%2fDashboard_O2&rs:Command=Render";}
+			if(n=="fr4"){url="http://krr-fas41/dpa_reports/(S(mhmynjknboyqu1ohainnp0eq))/Account/ed/DefaultReport.aspx?Owner=27";}
+			if(n=="fr5"){url="https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fEnergy%2fWater_supply_tables_for_ED&rs:Command=Render";}
+			if(n=="fr6"){url="https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSteelmaking%2fOxygen_BOF1-6&rs:Command=Render";}
+			if(n=="fr7"){url="http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fEnergy%2fLindeGas_online&rs%3aCommand=Render";}
+			if(n=="fr8") {url="http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fEnergy%2fLindeGas_current&rs%3aCommand=Render";}			
+*/			
+//<!--===========================================================================================================-->
 				
 			if (frameR.src!=url) {frameR.src=url;}
 			//alert(url);
 			
 		}
 </script>
-<script>	
-function test()
-	{
-		//var elem1 = document.getElementById(elemId);
-		//var style = window.getComputedStyle(elem1, null);
-		   
-		
-		var divcont = document.getElementById("content");
-		var contchild = divcont.children;
-				
-		var style;
-				
-		for (var i = 0; i < contchild.length; i++) 
-		{
-			
-			style = window.getComputedStyle(contchild[i], null);
-			//var divcont = document.getElementById("content");
-			//curZindex = 
-			if(style.zIndex=="100")
-			{
-				console.log("id - "+contchild[i].id+" zindex -"+style.zIndex);
-			
-			}
-
-    	}
-		
-		
-//  }
-//		var elem2 = document.getElementById(elemId);
-		
-		
-/*		alert("test");
-		fr_right = document.getElementById("rightside");
-		fr_right.style.visibility = "hidden";
-		fr_right.style.zIndex = "0";
-//		alert(fr_right.style.visibility);
-//		fr_right.style.visibility = "visible";
-//		alert(fr_right.style.visibility);
-		
-		//bodyteg=document.getElementsByTagName("body");
-		//alert(bodyteg.style.overflowY);
-		//bodyteg.style.overflowY= "hidden";
-		//alert(document.getElementsByTagName(body).style.overflowY);
-		
-		fr_dashboard = document.getElementById("Dashboard");
-		//alert("1 "+fr_dashboard.style.visibility);
-		fr_dashboard.style.visibility = "visible";
-		
-		alert("top "+fr_dashboard.style.top +"zindex "+fr_dashboard.style.zIndex);
-		//fr_dashboard.style.top="0";
-		fr_dashboard.style.zIndex ="2";
-		alert("top "+fr_dashboard.style.top +"zindex "+fr_dashboard.style.zIndex);
-		//alert("2 "+fr_dashboard.style.visibility);
-	
-*/	
-	
-	
-	
-	}
-	 
-</script> 
 	 
 <div id="top"> 
 	
@@ -241,15 +182,14 @@ function test()
 	
 </div>
 
-<div id="topbutton" class="text-center">
-	<button class ="btn btn-default" type="button" onclick="urlRightside('fr2');" > <b>O2</b> </button>
+<div id="topbutton" >
+	<button class ="btn btn-default align-middle" type="button" onclick="urlRightside('fr2');" > <b>O2</b> </button>
 	<button class ="btn btn-default" type="button" onclick="urlRightside('fr3');" ><b>Дутье</b></button>
 	<button class ="btn btn-default" type="button" onclick="urlRightside('fr4');" ><b>Параметры ПГЦ</b></button>
 	<button class ="btn btn-default" type="button" onclick="urlRightside('fr5');" ><b>Вода</b></button>
 	<button class ="btn btn-default" type="button" onclick="urlRightside('fr6');"><b>О2 КЦ</b></button>
 	<button class ="btn btn-default" type="button" onclick="urlRightside('fr7');"><b>Линде графики</b></button>	 
 	<button class ="btn btn-default" type="button" onclick="urlRightside('fr8');"><b>Линде текущие</b></button>
-	<a class="btn btn-default" onclick="test();">тест</a>
 	
 </div> 
 	 
@@ -260,7 +200,7 @@ function test()
 </div>
 	 
 <div id="content"  style="background-color: white;">
-<iframe  id="rightside" name="rightside" src="visalization_files/start.htm" style="" seamless></iframe>
+<iframe  id="rightside" name="rightside" src="visalization_files/start.htm" style="" ></iframe>
 <iframe  id="fr2" name="Dashboard" style="visibility: hidden;" src=""></iframe>
 <iframe  id="fr3" name="Cold" style="visibility: hidden" src=""></iframe>
 <iframe  id="fr4" name="Parametrs" style="visibility: hidden" src=""></iframe>	
@@ -277,13 +217,8 @@ function test()
 -->
 
 <!--===========================================================================================================-->
-<!--<SCRIPT src="visalization_files/tree_files/jquery-1.12.0.min.js"></SCRIPT>						-->
-<!--<SCRIPT src="visalization_files/tree_files/bootstrap.min.js"></SCRIPT>-->
-<!--<SCRIPT src="start_files/ie10-viewport-bug-workaround.js"></SCRIPT>-->
-<!--<SCRIPT src="start_files/lightbox.min.js"></SCRIPT>	-->
-<!--===========================================================================================================-->
-<!--<SCRIPT src="js/jquery-1.12.0.min.js"></SCRIPT>						-->
-<!--<SCRIPT src="styles/bootstrap/js/bootstrap.min.js"></SCRIPT>						-->
-<!--<SCRIPT src="styles/lightbox/js/lightbox.min.js"></SCRIPT>-->
+<SCRIPT src="js/jquery-1.12.0.min.js"></SCRIPT>						
+<SCRIPT src="styles/bootstrap/js/bootstrap.min.js"></SCRIPT>						
+<SCRIPT src="styles/lightbox/js/lightbox.min.js"></SCRIPT>
 </body>		
 </HTML>
