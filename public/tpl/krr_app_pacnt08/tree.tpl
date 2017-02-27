@@ -8,4 +8,6 @@
     <script src="/styles/easy_tree/jquery.easytree.min.js"></script>
 
 <div class="container tree">
+  <!--h2><a class="glyphicon glyphicon-menu-hamburger btn btn-default" aria-hidden="true" href="http://sps.arcelormittal.com.ua/" target="rightside"></a>Menu</h2-->
   <h2><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Menu</h2>
+  
