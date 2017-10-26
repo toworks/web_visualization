@@ -487,7 +487,7 @@ insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu
 values( 197, N'Прокатный департамент | Rolling Mill', N'none', N'folder', 29, NULL)
 insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
 ( [id], [name], [link], [type], [parent], [sortid] )
-values( 198, N'Система Totus | System Totus', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fRolling%2ftotus_analytics&amp;rs%3aCommand=Render', N'node', 197, NULL)
+values( 198, N'Система Totus | System Totus', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fRolling%2ftotus_main&amp;rs%3aCommand=Render', N'node', 197, NULL)
 insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
 ( [id], [name], [link], [type], [parent], [sortid] )
 values( 199, N'Текущие показания по азоту | Current nitrogen parameters', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fEnergy%2fgcCurrNitro&rs:Command=Render', N'node', 159, 169)
