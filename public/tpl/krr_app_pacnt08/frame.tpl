@@ -150,7 +150,7 @@
 			if(n=="fr2")
 			{url="https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%%2fProductivity%%2fEnergy%%2fDashboard_O2&rs:Command=Render";}
 			if(n=="fr3"){url="http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%%2fProductivity%%2fManagers%%2fBF_Cold+blast+flow&amp;rs%%3aCommand=Render";}
-			if(n=="fr4"){url="http://krr-fas41/dpa_reports/(S(mhmynjknboyqu1ohainnp0eq))/Account/ed/DefaultReport.aspx?Owner=27";}
+			if(n=="fr4"){url="https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%%2fProductivity%%2fSinter+and+Blast%%2fBF_Gas_hour&rs:Command=Render";}
 			if(n=="fr5"){url="https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%%2fProductivity%%2fEnergy%%2fWater_supply_tables_for_ED&rs:Command=Render";}
 			if(n=="fr6"){url="https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%%2fProductivity%%2fSteelmaking%%2fOxygen_BOF1-6&rs:Command=Render";}
 			if(n=="fr7"){url="http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%%2fProductivity%%2fEnergy%%2fLindeGas_online&rs%%3aCommand=Render";}
