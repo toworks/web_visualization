@@ -75,7 +75,7 @@ sub call {
 
             return [
                 200,
-                    [   'Content-Type'   => 'text/html; charset=utf8' ],
+                    [   'Content-Type'   => 'text/html; charset=utf-8' ],
                     [   $page   ]
             ];
 #    } else {
@@ -166,7 +166,7 @@ sub return_404 {
     my $tpl = $self->get_header($url, $path_tpl);
     $tpl .= $self->read_template($path_tpl, "404");
     $tpl .= "    </body>\n</html>\n";
-    return [404, [ 'Content-Type'   => 'text/html; charset=utf8' ], [ $tpl ]];
+    return [404, [ 'Content-Type'   => 'text/html; charset=utf-8' ], [ $tpl ]];
 }
 
 
