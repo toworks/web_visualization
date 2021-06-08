@@ -31,8 +31,8 @@ package mssql;{
  
   sub set_con {
     my($self) = @_; # ссылка на объект
-#	$self->{dsn} = "Driver={ODBC Driver 11 for SQL Server};Server=$self->{sql}->{host};Database=$self->{sql}->{database};Trusted_Connection=yes";
-	$self->{dsn} = "Driver={SQL Server};Server=$self->{sql}->{host};Database=$self->{sql}->{database};Trusted_Connection=yes";
+	$self->{dsn} = "Driver={ODBC Driver 17 for SQL Server};Server=$self->{sql}->{host};Database=$self->{sql}->{database};Trusted_Connection=yes";
+#	$self->{dsn} = "Driver={SQL Server};Server=$self->{sql}->{host};Database=$self->{sql}->{database};Trusted_Connection=yes";
   }
 
   sub conn {
