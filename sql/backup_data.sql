@@ -2,504 +2,183 @@
 SET IDENTITY_INSERT [KRR-PA-GLB-SERVICE].[dbo].visualization_menu  ON;
 
 
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 25, N'Аглоцеха №1,2,3 | Sinter plant №1,2,3', N'none', N'folder', 184, 25)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 26, N'Данные с анализатора шихты | Charge analyzer data', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fManagers%2fCharge+analyzer+data&amp;rs%3aCommand=Render', N'node', 25, 26)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 27, N'Тарирование вагонов агломерата | Hopper taring', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fManagers%2fHopperTaring&amp;rs%3aCommand=Render', N'node', 25, 27)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 28, N'Агломерат ДЦ2 | Sinter BF-9', N'none', N'folder', 184, 28)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 29, N'Аналитические системы | Analytics', N'none', N'folder', NULL, 185)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 30, N'Прослеживаемость плавки | Heat tracking', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fHot+Rolling%2fAMKR_YIELD_TRACKING_BY_HEAT&amp;rs%3aCommand=Render', N'node', 29, 30)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 31, N'Баланс Аглоцеха | Sinter shop balance', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSinter+and+Blast%2fSinter+shop+balance&amp;rs%3aCommand=Render', N'node', 29, 31)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 32, N'ДЦ | BF', N'none', N'folder', 184, 32)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 33, N'Электроэнергия | Energy', N'none', N'folder', 150, 33)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 34, N'ТЭЦ | H&PP', N'none', N'folder', 150, 34)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 35, N'Кис. пр-во | Oxygen Plant', N'none', N'folder', 150, 35)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 36, N'КЦ | BOF', N'none', N'folder', 185, 36)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 37, N'КХП | Coke Plant', N'none', N'folder', NULL, 184)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 38, N'OHPC', N'none', N'folder', 185, 38)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 39, N'Отслеживание КПЭ проектов | Project KPI tracking', N'none', N'folder', 29, 39)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 40, N'Прокатный департамент | Rolling Mill', N'none', N'folder', NULL, 37)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 41, N'Простои производства | DMS', N'none', N'folder', 29, 41)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 42, N'Водоснабжение | Water supply', N'none', N'folder', 150, 42)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 43, N'Блюминг | Blooming', N'none', N'folder', 40, 43)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 44, N'Аудит', N'none', N'folder', 29, 44)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 45, N'Информация по весовым SCHENCK', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fManagers%2f%u0418%u043d%u0444%u043e%u0440%u043c%u0430%u0446%u0438%u044f+%u043f%u043e+%u0432%u0435%u0441%u043e%u0432%u044b%u043c&amp;rs%3aCommand=Render', N'node', 44, 45)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 46, N'Информация о расходе раскислителей КЦ', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSteelmaking%2f%u0420%u0430%u0441%u0445%u043e%u0434+%u0440%u0430%u0441%u043a%u0438%u0441%u043b%u0438%u0442%u0435%u043b%u0435%u0439+%u043f%u043e+%u041a%u0426&amp;rs%3aCommand=Render', N'node', 44, 46)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 47, N'Учет работы копровой цех | DMS Scrap preparation shop', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fManagers%2fARMP_Scrap_Yard&amp;rs%3aCommand=Render', N'node', 41, 47)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 48, N'ARMP суточный отчет | ARMP daly report', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fManagers%2fARMP_TRENDS_v3&amp;rs%3aCommand=Render', N'node', 41, 48)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 49, N'Система ARMP | System ARMP', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fManagers%2fARMP_v3_5min&amp;rs%3aCommand=Render', N'node', 41, 49)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 50, N'Учет простоев Аглоцеха | DMS Sinter Plant', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fManagers%2fDMS_Sinter123&amp;rs%3aCommand=Render', N'node', 41, 50)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 51, N'Учет простоев КЦ | DMS BOF №1-6', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fManagers%2fDMS_K4&amp;rs%3aCommand=Render', N'node', 41, 51)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 52, N'Работа модели KLIP | Work KLIP model', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fManagers%2fWork_KLIP_all_heat&amp;rs%3aCommand=Render', N'node', 43, 52)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 53, N'Бл-2 Работа нагревательных колодцев | Bl-2 Work of soaking pits', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fManagers%2fKLIP_pits_in_work_graf&amp;rs%3aCommand=Render', N'node', 43, 53)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 54, N'Бл-2 Работа нагревательных колодцев [% загр.] | Bl-2 Work of soaking pits [% of charge]', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fManagers%2fKLIP_work_sereral_pits&amp;rs%3aCommand=Render', N'node', 43, 54)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 55, N'Файл статистики KLIP | File statistics KLIP', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fManagers%2fStatistic_KLIP&amp;rs%3aCommand=Render', N'node', 43, 55)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 56, N'1. Текущие значения КЦ | Online BOF values', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fWater+supply%2fWater_supply_tables_BOF&amp;rs%3aCommand=Render', N'node', 42, 56)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 57, N'2. Текущие значения ДЦ-1,2 | Online BF values', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fWater+supply%2fWater_supply_tables_BF&amp;rs%3aCommand=Render', N'node', 42, 57)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 58, N'3. Текущие значения газоочисток 3,4 | Online gas cleaner 3,4 values', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fWater+supply%2fWater_supply_tables_gas_filter_BF&amp;rs%3aCommand=Render', N'node', 42, 58)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 59, N'4. Графики значений КЦ чистый цикл | Charts of BOF clean cycle', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fWater+supply%2fWater_supply_charts_BOF_Clean_cycle&amp;rs%3aCommand=Render', N'node', 42, 59)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 60, N'5. Графики значений КЦ грязный цикл | Charts of BOF dirty cycle', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fWater+supply%2fWater_supply_charts_BOF_Dirty_cycle&amp;rs%3aCommand=Render', N'node', 42, 60)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 61, N'6. Графики значений ДЦ чистый цикл | Charts of BF clean cycle', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fWater+supply%2fWater_supply_charts_BF_Clean_cycle&amp;rs%3aCommand=Render', N'node', 42, 61)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 62, N'7. Графики значений газоочисток 3,4 | Charts of gas cleaner 3,4', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fWater+supply%2fWater_supply_charts_gas_filter_BF&amp;rs%3aCommand=Render', N'node', 42, 62)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 63, N'Протокол смены печная группа', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fRolling%2frolling_heating_weight&amp;rs%3aCommand=Render', N'node', 40, 63)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 64, N'Внедрение проекта ПБГП | Labels Project tracking', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fRolling%2flabels_implementation&amp;rs%3aCommand=Render', N'node', 40, 64)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 65, N'Простои ПД | DMS Rolling Mills', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fHot+Rolling%2fDMS_WR1_Main&amp;rs%3aCommand=Render', N'node', 40, 65)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 66, N'Производство ПД | Production Rolling Mills', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fHot+Rolling%2fDMS_WR1_Production&amp;rs%3aCommand=Render', N'node', 40, 66)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 67, N'Параметры ПД | Rolling Mills Params', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fHot+Rolling%2fRolling_Mill_Tech_Params&amp;rs%3aCommand=Render', N'node', 40, 67)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 68, N'DMS параметры ПД | DMS Rolling Mills Params', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fRolling%2fRD_DMS_technological_parameters&amp;rs%3aCommand=Render', N'node', 40, 68)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 69, N'Мониторинг работы модели MPC | Work monitoring MPC model ', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fHot+Rolling%2fMPC_DMS&amp;rs%3aCommand=Render', N'node', 40, 69)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 70, N'Использование бирок на прокатных станах', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fRolling%2flabels_count&amp;rs%3aCommand=Render', N'node', 40, 70)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 71, N'DMS аналитика работы ПД | DMS Analytics work RD', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fRolling%2fRD_DMS_analytics&amp;rs%3aCommand=Render', N'node', 40, 71)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 72, N'Анализ работы системы печати бирок на МС-1', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fRolling%2flabels_analysis_LSM-1&amp;rs%3aCommand=Render', N'node', 40, 72)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 73, N'Прослеживаемость металлолома | Scrap Tracking', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSteelmaking%2fScrapTrackingEffect&amp;rs%3aCommand=Render', N'node', 39, 73)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 74, N'Проект "Миксер" | Mixer Project', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSteelmaking%2fMixerProjectEffect&amp;rs%3aCommand=Render', N'node', 39, 74)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 75, N'Проект тарирования аглохопперов | Sinter wagon taring project', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSinter+and+Blast%2fHopperTaringTrackingEffect&amp;rs%3aCommand=Render', N'node', 39, 75)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 76, N'Проект "Углерод" | Carbon Project', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSteelmaking%2fCarbonProjectEffect&amp;rs%3aCommand=Render', N'node', 39, 76)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 77, N'Паспорт плавки МНЛЗ', N'none', N'folder', 38, 77)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 78, N'Паспорт плавки УПК', N'none', N'folder', 38, 78)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 79, N'Хим. анализ стали', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSteelmaking%2f%u041e%u0442%u0447%u0435%u0442+%u041c%u041d%u041b%u0417+(%u0410%u043d%u0430%u043b%u0438%u0437+%u0441%u0442%u0430%u043b%u0438)&amp;rs%3aCommand=Render', N'node', 77, 79)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 80, N'Химический анализ шлака', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSteelmaking%2f%u041e%u0442%u0447%u0435%u0442+%u0423%u041f%u041a+(%u0410%u043d%u0430%u043b%u0438%u0437+%u0448%u043b%u0430%u043a%u0430)&amp;rs%3aCommand=Render', N'node', 78, 80)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 81, N'Химический анализ стали', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSteelmaking%2f%u041e%u0442%u0447%u0435%u0442+%u0423%u041f%u041a+(%u0410%u043d%u0430%u043b%u0438%u0437+%u0441%u0442%u0430%u043b%u0438)&amp;rs%3aCommand=Render', N'node', 78, 81)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 82, N'Отчет УПК', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSteelmaking%2f%u041e%u0442%u0447%u0435%u0442+%u0423%u041f%u041a+%u043e%u0431%u0449%u0438%u0439&amp;rs%3aCommand=Render', N'node', 78, 82)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 83, N'КЦ №1', N'none', N'folder', 37, 83)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 84, N'УПЦ', N'none', N'folder', 37, 84)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 85, N'ЦСО', N'none', N'folder', 37, 85)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 86, N'Учет энергетических параметров', N'none', N'folder', 37, 86)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 87, N'Графики', N'none', N'folder', 83, 87)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 88, N'Таблицы', N'none', N'folder', 83, 88)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 89, N'Графики', N'none', N'folder', 84, 89)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 90, N'Таблицы', N'none', N'folder', 84, 90)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 91, N'Модель шихтовки | Model Charge', N'none', N'delete', 36, 91)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 92, N'Таблицы', N'none', N'folder', 36, 92)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 93, N'Графики | Charts', N'none', N'folder', 36, 93)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 94, N'Графики среднесуточные | Charts every day', N'none', N'delete', 36, 94)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 95, N'Графики среднемесячные | Charts every month', N'none', N'delete', 36, 95)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 96, N'Графики среднегодовые | Charts every year', N'none', N'delete', 36, 96)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 97, N'Миксерное отд. | Mixer yard', N'none', N'folder', 36, 97)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 98, N'Отчет по работе АСУ ШК', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSteelmaking%2f%u041e%u0442%u0447%u0435%u0442+%u043f%u043e+%u0440%u0430%u0431%u043e%u0442%u0435+%u0410%u0421%u0423%u0428%u041a&amp;rs%3aCommand=Render', N'node', 36, 98)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 99, N'График технологических операций', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSteelmaking%2fMixer_stages&amp;rs%3aCommand=Render', N'node', 97, 99)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 100, N'График фиксация веса чугуна', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSteelmaking%2fMixer_weighings&amp;rs%3aCommand=Render', N'node', 97, 100)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 101, N'Причины додувок', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSteelmaking%2f%u0420%u0430%u0441%u043f%u0440%u0435%u0434%u0435%u043b%u0435%u043d%u0438%u0435+%u0434%u043e%u0434%u0443%u0432%u043e%u043a&amp;rs%3aCommand=Render', N'node', 93, 101)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 102, N'Расход N2 на КЦ | Flow N2 on BOF', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSteelmaking%2fFlow+N2+on+BOF&amp;rs%3aCommand=Render', N'node', 93, 102)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 103, N'Суточный отчет конт. лаб. блок №1', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSteelmaking%2f%u041e%u0442%u0447%u0435%u0442+%u043f%u043e+%u043a%u043e%u043d%u0442%u0435%u0439%u043d%u0435%u0440.%u043b%u0430%u0431.%u21161&amp;rs%3aCommand=Render', N'node', 92, 103)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 104, N'Линде газ | Linde gas', N'none', N'folder', 35, 104)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 105, N'Почасовый отчет КТК | KTK hourly report', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fEnergy%2fOxygenPlant_KTK_hour_report&amp;rs%3aCommand=Render', N'node', 35, 105)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 106, N'Текущие параметры О2 КЦ | O2 BOF current params', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fEnergy%2fBOF_oxygen_current&amp;rs%3aCommand=Render', N'node', 35, 106)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 107, N'Суточный расход О2 | Daily flow O2', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fEnergy%2fOxygenPlant_daily_report&amp;rs%3aCommand=Render', N'node', 35, 107)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 108, N'Почасовой отчет О2 | Hourly report O2', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fEnergy%2fOxygenPlant_hour_report&amp;rs%3aCommand=Render', N'node', 35, 108)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 109, N'Кислородное пр-во Онлайн | Oxygen plant online', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fEnergy%2fOxygenPlant_online&amp;rs%3aCommand=Render', N'node', 35, 109)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 110, N'Сводный отчет Линде Газ | Summary report Linde Gas', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fEnergy%2fLindeGasReport&amp;rs%3aCommand=Render', N'node', 104, 110)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 111, N'Линде Газ онлайн | Linde Gas online', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fEnergy%2fLindeGas_online&amp;rs%3aCommand=Render', N'node', 104, 111)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 112, N'Линде Газ текущие параметры | Linde Gas current', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fEnergy%2fLindeGas_current&amp;rs%3aCommand=Render', N'node', 104, 112)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 113, N'Почасовый отчет O2 | Hourly report O2', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fEnergy%2fTEC_hour_report&amp;rs%3aCommand=Render', N'node', 34, 113)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 114, N'СПЦ-1', N'none', N'folder', 33, 114)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 115, N'Таблицы | Tables', N'none', N'folder', 32, 115)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 116, N'Графики | Charts', N'none', N'folder', 32, 116)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 117, N'Модели | Model', N'none', N'folder', 32, 117)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 118, N'Mothus. ThermocouplesData BF-6', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSinter+and+Blast%2fMotus_BF-6_temperature&amp;rs%3aCommand=Render', N'node', 32, 118)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 119, N'Интервал перемещения ковшей между АДД и СД', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSinter+and+Blast%2f%u0418%u043d%u0444%u043e%u0440%u043c%u0430%u0446%u0438%u044f+%u043f%u043e+%u0434%u043e%u043c%u0435%u043d%u043d%u044b%u043c+%u043a%u043e%u0432%u0448%u0430%u043c+%u0441+%u0447%u0443%u0433%u0443%u043d%u043e%u043c&amp;rs%3aCommand=Render', N'node', 32, 119)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 120, N'BF-8. Delay between tapping and weighing ladles according to taps', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fManagers%2fBF-8_delta_time_tap_graf&amp;rs%3aCommand=Render', N'node', 32, 120)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 121, N'BF-8. Delay between tapping and weighing ladles', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fManagers%2fBF-8_delta_time_graf&amp;rs%3aCommand=Render', N'node', 32, 121)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 122, N'BF parameters', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fManagers%2fBF_parameters&amp;rs%3aCommand=Render', N'node', 32, 122)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 123, N'BF tap Si monitoring', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fManagers%2fBF+tap+Si+monitoring&amp;rs%3aCommand=Render', N'node', 32, 123)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 124, N'Ежесуточный рапорт по ДП | Daily report of BF', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fManagers%2fEveryday+report+BF+graf&rs:Command=Render', N'node', 32, 124)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 125, N'Технологические параметры ДЦ-1,2 | BF shop technological parameters', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fManagers%2fBF_Tech_Params_matrix&amp;rs%3aCommand=Render', N'node', 32, 125)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 126, N'Motus ДП-8 | Motus BF-6', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSinter+and+Blast%2fMotus&amp;rs%3aCommand=Render', N'node', 117, 126)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 127, N'Уровень засыпи печи | BF burden level', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fManagers%2fBF_burden+level&amp;rs%3aCommand=Render', N'node', 116, 127)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 128, N'Ежесуточный отчет по ДП | Everyday report of BF', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSinter+and+Blast%2fEveryday+report+BF&amp;rs%3aCommand=Render', N'node', 116, 128)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 129, N'Диспетчепский отчет | Dispatcher report', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fManagers%2fDispatcher_report_English&amp;rs%3aCommand=Render', N'node', 116, 129)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 130, N'ПУТ ДП-9 | Coal ingection BF-9', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fManagers%2fBF9_coal_ingection&amp;rs%3aCommand=Render', N'node', 116, 130)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 131, N'Расход холодного дутья | Cold blast flow', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fManagers%2fBF_Cold+blast+flow&amp;rs%3aCommand=Render', N'node', 116, 131)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 132, N'Теоретическая температура горения по ДП | Theoretical burn temperature of BF', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fManagers%2fTheoretical+burn+temperature+BF-9&amp;rs%3aCommand=Render', N'node', 116, 132)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 133, N'Выгрузка материалов ДП', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSinter+and+Blast%2fBF_load_material&amp;rs%3aCommand=Render', N'node', 115, 133)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 134, N'DMS Баланс времени работы | DMS Working time balance', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fDevelop%2fRolling%2fRD_DMS_analytic_TimeOfWorking&rs:Command=Render', N'node', 40, 134)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 135, N'Отчет по ферросплавам | Report ferroalloys', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSteelmaking%2freport_ferroalloys&rs:Command=Render', N'node', 44, 135)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 136, N'Учет простоев КЦ-3 стадии | DMS BOF-3 stages', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSteelmaking%2fdms_steelmaking_stages&rs:Command=Render', N'node', 41, 136)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 137, N'ARMP данные передаваемые в SAP | ARMP data transferred to SAP', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fRolling%2fRD_DMS_compraison_sending_data_for_SAP_between_product_test_servers&rs:Command=Render', N'node', 41, 137)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 138, N'Почасовый отчет по пару | Hourly report steam', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fEnergy%2fLindeGas_steam_hour_report&rs:Command=Render', N'node', 104, 138)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 139, N'Отчет МНЛЗ', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/?%2fProductivity%2fSteelmaking%2f%d0%9e%d1%82%d1%87%d0%b5%d1%82+%d0%9c%d0%9d%d0%9b%d0%97+%d0%be%d0%b1%d1%89%d0%b8%d0%b9&rs:Command=Render', N'node', 77, 139)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 140, N'Расход О2 на плавку КЦ | Flow O2 for heat BOF', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSteelmaking%2fBOF_Flow_O2_for+heat&rs:Command=Render', N'node', 93, 140)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 141, N'Кристаллизатор/Гильза', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSteelmaking%2fMNLZ_Kristallizator_Gilza&rs:Command=Render', N'node', 77, 141)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 142, N'Технологические параметры средние за час', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSinter+and+Blast%2fTechnological+parameters+average_per_hour&rs:Command=Render', N'node', 115, 142)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 143, N'Сплавы и добавки на порцию', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSteelmaking%2fUPK_SplavDobav_porc&rs:Command=Render', N'node', 78, 143)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 144, N'Сплавы и добавки общие', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSteelmaking%2fUPK_SplavDobav_All&rs:Command=Render', N'node', 78, 144)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 145, N'Продувка плавок с несоответствиями по О2', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSteelmaking%2f%d0%9a%d0%a6_%d0%9f%d0%bb%d0%b0%d0%b2%d0%ba%d0%b8+%d1%81+%d0%bd%d0%b5%d1%81%d0%be%d0%be%d1%82%d0%b2%d0%b5%d1%82%d1%81%d1%82%d0%b2%d0%b8%d0%b5%d0%bc+%d0%bf%d0%be+%d0%9e2&rs:Command=Render', N'node', 92, 145)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 146, N'Параметры нагревательных печей прокатных станов', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fRolling%2froling_parameters_monitoring&rs:Command=Render', N'node', 40, 146)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 147, N'КРП КЦ текущие параметры | BOF ODU current', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fEnergy%2fLindeGas_KRP_current&rs:Command=Render', N'node', 35, 147)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 148, N'Кислород К1-6', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSteelmaking%2fOxygen_BOF1-6&rs:Command=Render', N'node', 93, 148)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 149, N'Кислород К1-6', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSteelmaking%2fOxygen_BOF1-6&rs:Command=Render', N'node', 35, 149)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 150, N'Энергетический департамент | Energy Department', N'none', N'folder', NULL, 150)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 151, N'Dashboard O2', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fEnergy%2fDashboard_O2&rs:Command=Render', N'node', 150, 151)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 159, N'Agbor', N'none', N'folder', 35, 159)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 160, N'Почасовой балансовый отчет по О2', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fEnergy%2fgcHourBalanceOxy&rs:Command=Render', N'node', 159, 160)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 161, N'Почасовой отчет по ПРВ', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fEnergy%2fgcHourReport&rs:Command=Render', N'node', 159, 161)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 162, N'Расход холодного дутья ДП | Cold blast flow', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fManagers%2fBF_Cold+blast+flow&amp;rs%3aCommand=Render', N'node', 150, 162)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 163, N'Параметры ПГЦ', N'http://krr-fas41/dpa_reports/(S(mhmynjknboyqu1ohainnp0eq))/Account/ed/DefaultReport.aspx?Owner=27', N'node', 150, 163)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 164, N'Почасовый отчет по пару | Hourly report steam', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fEnergy%2fLindeGas_steam_hour_report&rs:Command=Render', N'node', 104, 164)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 165, N'Водоснабжение | Water supply', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fEnergy%2fWater_supply_tables_for_ED&rs:Command=Render', N'node', 150, 165)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 166, N'Кислород К1-6 | Oxygen BOF1-6', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSteelmaking%2fOxygen_BOF1-6&rs:Command=Render', N'node', 150, 166)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 167, N'Газопроницаемость | Gas permeability', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSinter+and+Blast%2fBF_Gas_permeability&rs:Command=Render', N'node', 116, 167)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 168, N'Почасовый отчет по сж. воздуху | Hourly air balance', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fEnergy%2fgcHourBalanceAir&rs:Command=Render', N'node', 159, 168)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 169, N'Почасовый отчет по азоту | Hourly nitrogen balance', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fEnergy%2fgcHourBalanceNitro&rs:Command=Render', N'node', 159, 169)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 170, N'Текущие показания по сж. воздуху | Current air parameters', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fEnergy%2fgcCurrAir&rs:Command=Render', N'node', 159, 170)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 171, N'Перешихтовки | Burden change', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSinter+and+Blast%2fBF_shihta_total&rs:Command=Render', N'node', 115, 171)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 173, N'Распределение О2 | O2 distribution', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fEnergy%2fgcCurrOxy&rs:Command=Render', N'node', 159, 173)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 174, N'Химический анализ чугуна и шлака | Chemical analysis HM and slag', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSinter+and+Blast%2fBF_chemical_analysis_HM_and_slag&rs:Command=Render', N'node', 115, 174)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 175, N'Температура колошникового газа в газоходах ДП-9 | BF9_Top gas temperature in gas pipe', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSinter+and+Blast%2fBF9_Top+gas+temperature+in+gas+pipe&rs:Command=Render', N'node', 116, 175)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 176, N'Энергетические показатели | Energy characteristics', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSinter+and+Blast%2fBF_energy_characteristics&rs:Command=Render', N'node', 115, 176)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 177, N'Температура горячего дутья | Temperature hot blast', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSinter+and+Blast%2fBF_Temperature_hot_blast&rs:Command=Render', N'node', 116, 177)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 178, N'Температура колошникового газа | Top gas temperature', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSinter+and+Blast%2fBF_Temperature_top_gas&rs:Command=Render', N'node', 116, 178)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 179, N'Температура чугуна | Temperature HM', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSinter+and+Blast%2fBF_Temperature_HM&rs:Command=Render', N'node', 116, 179)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 180, N'Водоснабжение ДП | BF water supply', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSinter+and+Blast%2fBF_water+supply&rs:Command=Render', N'node', 116, 180)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 181, N'Давление колошникового газа | Top gas pressure', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSinter+and+Blast%2fBF_Pressure_top_gas&rs:Command=Render', N'node', 116, 181)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 182, N'Давление горячего дутья | Hot Blow pressure', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSinter+and+Blast%2fBF_Pressure_HotBlow&rs:Command=Render', N'node', 116, 182)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 183, N'Перепад давления | Delta pressure', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSinter+and+Blast%2fBF_Delta_Pressure&rs:Command=Render', N'node', 116, 183)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 184, N'Аглодоменный департамент | Ironmaking Department', N'none', N'folder', NULL, 29)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 185, N'Сталеплавильный департамент | Steelmaking Department', N'none', N'folder', NULL, 40)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 186, N'Расход колошникового газа на выходе | Top gas flow at the out', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSinter+and+Blast%2fBF_Flow+top+gas_out&rs:Command=Render', N'node', 116, NULL)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 187, N'Расход природного газа | Natural gas flow', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSinter+and+Blast%2fBF_Flow_natural+gas&rs:Command=Render', N'node', 116, NULL)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 188, N'Расход пара в дутье | Steam blow flow', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSinter+and+Blast%2fBF_Flow_steam_blow&rs:Command=Render', N'node', 116, NULL)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 189, N'Процентное содержание О2 в дутье | Percent O2 in blow', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSinter+and+Blast%2fBF_Percent_O2+in+blow&rs:Command=Render', N'node', 116, NULL)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 190, N'Скорость дутья | Speed blast', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSinter+and+Blast%2fBF_Speed_blast&rs:Command=Render', N'node', 116, NULL)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 191, N'Колошниковый газ | Top gas', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSinter+and+Blast%2fBF_Top+gas&rs:Command=Render', N'node', 116, NULL)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 192, N'Химический анализ чугуна | Chemical analises HM', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSinter+and+Blast%2fBF_chem_analysis_HM&rs:Command=Render', N'node', 116, NULL)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 193, N'Химический анализ шлака | Chemical analises slag', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSinter+and+Blast%2fBF_chem_analysis_slag&rs:Command=Render', N'node', 116, NULL)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 194, N'Расход кислорода | Flow oxygen', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSinter+and+Blast%2fBF_Flow+O2&rs:Command=Render', N'node', 116, NULL)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 195, N'Температура периферии печи | Temperature periphery of BF', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSinter+and+Blast%2fBF_temperature+of+the+periphery&rs:Command=Render', N'node', 116, NULL)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 196, N'Распределение технол.О2 | Technol. O2 distribution', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fEnergy%2fgcCurrOxy_technologic&rs:Command=Render', N'node', 159, NULL)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 197, N'Прокатный департамент | Rolling Mill', N'none', N'folder', 29, NULL)
-insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu 
-( [id], [name], [link], [type], [parent], [sortid] )
-values( 198, N'Система Totus | System Totus', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fRolling%2ftotus_reports&amp;rs%3aCommand=Render', N'node', 197, NULL)
-
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 25, N'РђРіР»РѕС†РµС…Р° в„–1,2,3 | Sinter plant в„–1,2,3', N'none', N'folder', 184, 25)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 26, N'Р”Р°РЅРЅС‹Рµ СЃ Р°РЅР°Р»РёР·Р°С‚РѕСЂР° С€РёС…С‚С‹ | Charge analyzer data', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fManagers%2fCharge+analyzer+data&amp;rs%3aCommand=Render', N'node', 25, 26)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 27, N'РўР°СЂРёСЂРѕРІР°РЅРёРµ РІР°РіРѕРЅРѕРІ Р°РіР»РѕРјРµСЂР°С‚Р° | Hopper taring', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fManagers%2fHopperTaring&amp;rs%3aCommand=Render', N'node', 25, 27)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 29, N'РђРЅР°Р»РёС‚РёС‡РµСЃРєРёРµ СЃРёСЃС‚РµРјС‹ | Analytics', N'none', N'folder', NULL, 185)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 30, N'РџСЂРѕСЃР»РµР¶РёРІР°РµРјРѕСЃС‚СЊ РїР»Р°РІРєРё | Heat tracking', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fHot+Rolling%2fAMKR_YIELD_TRACKING_BY_HEAT&amp;rs%3aCommand=Render', N'node', 29, 30)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 31, N'Р‘Р°Р»Р°РЅСЃ РђРіР»РѕС†РµС…Р° | Sinter shop balance', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSinter+and+Blast%2fSinter+shop+balance&amp;rs%3aCommand=Render', N'node', 29, 31)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 32, N'Р”Р¦ | BF', N'none', N'folder', 184, 32)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 33, N'Р­Р»РµРєС‚СЂРѕСЌРЅРµСЂРіРёСЏ | Energy', N'none', N'folder', 150, 33)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 34, N'РўР­Р¦ | H&PP', N'none', N'folder', 150, 34)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 35, N'РљРёСЃ. РїСЂ-РІРѕ | Oxygen Plant', N'none', N'folder', 150, 35)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 36, N'РљР¦ | BOF', N'none', N'folder', 185, 36)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 37, N'РљРҐРџ | Coke Plant', N'none', N'folder', NULL, 184)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 38, N'OHPC', N'none', N'folder', 185, 38)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 39, N'РћС‚СЃР»РµР¶РёРІР°РЅРёРµ РљРџР­ РїСЂРѕРµРєС‚РѕРІ | Project KPI tracking', N'none', N'folder', 29, 39)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 40, N'РџСЂРѕРєР°С‚РЅС‹Р№ РґРµРїР°СЂС‚Р°РјРµРЅС‚ | Rolling Mill', N'none', N'folder', NULL, 37)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 41, N'РџСЂРѕСЃС‚РѕРё РїСЂРѕРёР·РІРѕРґСЃС‚РІР° | DMS', N'none', N'folder', 29, 41)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 42, N'Р’РѕРґРѕСЃРЅР°Р±Р¶РµРЅРёРµ | Water supply', N'none', N'folder', 150, 42)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 43, N'Р‘Р»СЋРјРёРЅРі | Blooming', N'none', N'folder', 40, 43)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 44, N'РђСѓРґРёС‚', N'none', N'folder', 29, 44)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 45, N'РРЅС„РѕСЂРјР°С†РёСЏ РїРѕ РІРµСЃРѕРІС‹Рј SCHENCK', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fManagers%2f%u0418%u043d%u0444%u043e%u0440%u043c%u0430%u0446%u0438%u044f+%u043f%u043e+%u0432%u0435%u0441%u043e%u0432%u044b%u043c&amp;rs%3aCommand=Render', N'node', 44, 45)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 47, N'РЈС‡РµС‚ СЂР°Р±РѕС‚С‹ РєРѕРїСЂРѕРІРѕР№ С†РµС… | DMS Scrap preparation shop', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fManagers%2fARMP_Scrap_Yard&amp;rs%3aCommand=Render', N'node', 41, 47)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 48, N'ARMP СЃСѓС‚РѕС‡РЅС‹Р№ РѕС‚С‡РµС‚ | ARMP daly report', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fManagers%2fARMP_TRENDS_v3&amp;rs%3aCommand=Render', N'node', 41, 48)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 49, N'РЎРёСЃС‚РµРјР° ARMP | System ARMP', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fManagers%2fARMP_v3_5min&amp;rs%3aCommand=Render', N'node', 41, 49)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 50, N'РЈС‡РµС‚ РїСЂРѕСЃС‚РѕРµРІ РђРіР»РѕС†РµС…Р° | DMS Sinter Plant', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fManagers%2fDMS_Sinter123&amp;rs%3aCommand=Render', N'node', 41, 50)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 51, N'РЈС‡РµС‚ РїСЂРѕСЃС‚РѕРµРІ РљР¦ | DMS BOF в„–1-6', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fManagers%2fDMS_K4&amp;rs%3aCommand=Render', N'node', 41, 51)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 52, N'Р Р°Р±РѕС‚Р° РјРѕРґРµР»Рё KLIP | Work KLIP model', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fManagers%2fWork_KLIP_all_heat&amp;rs%3aCommand=Render', N'node', 43, 52)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 53, N'Р‘Р»-2 Р Р°Р±РѕС‚Р° РЅР°РіСЂРµРІР°С‚РµР»СЊРЅС‹С… РєРѕР»РѕРґС†РµРІ | Bl-2 Work of soaking pits', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fManagers%2fKLIP_pits_in_work_graf&amp;rs%3aCommand=Render', N'node', 43, 53)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 54, N'Р‘Р»-2 Р Р°Р±РѕС‚Р° РЅР°РіСЂРµРІР°С‚РµР»СЊРЅС‹С… РєРѕР»РѕРґС†РµРІ [% Р·Р°РіСЂ.] | Bl-2 Work of soaking pits [% of charge]', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fManagers%2fKLIP_work_sereral_pits&amp;rs%3aCommand=Render', N'node', 43, 54)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 55, N'Р¤Р°Р№Р» СЃС‚Р°С‚РёСЃС‚РёРєРё KLIP | File statistics KLIP', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fManagers%2fStatistic_KLIP&amp;rs%3aCommand=Render', N'node', 43, 55)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 56, N'1. РўРµРєСѓС‰РёРµ Р·РЅР°С‡РµРЅРёСЏ РљР¦ | Online BOF values', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fWater+supply%2fWater_supply_tables_BOF&amp;rs%3aCommand=Render', N'node', 42, 56)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 57, N'2. РўРµРєСѓС‰РёРµ Р·РЅР°С‡РµРЅРёСЏ Р”Р¦-1,2 | Online BF values', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fWater+supply%2fWater_supply_tables_BF&amp;rs%3aCommand=Render', N'node', 42, 57)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 58, N'3. РўРµРєСѓС‰РёРµ Р·РЅР°С‡РµРЅРёСЏ РіР°Р·РѕРѕС‡РёСЃС‚РѕРє 3,4 | Online gas cleaner 3,4 values', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fWater+supply%2fWater_supply_tables_gas_filter_BF&amp;rs%3aCommand=Render', N'node', 42, 58)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 59, N'4. Р“СЂР°С„РёРєРё Р·РЅР°С‡РµРЅРёР№ РљР¦ С‡РёСЃС‚С‹Р№ С†РёРєР» | Charts of BOF clean cycle', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fWater+supply%2fWater_supply_charts_BOF_Clean_cycle&amp;rs%3aCommand=Render', N'node', 42, 59)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 60, N'5. Р“СЂР°С„РёРєРё Р·РЅР°С‡РµРЅРёР№ РљР¦ РіСЂСЏР·РЅС‹Р№ С†РёРєР» | Charts of BOF dirty cycle', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fWater+supply%2fWater_supply_charts_BOF_Dirty_cycle&amp;rs%3aCommand=Render', N'node', 42, 60)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 61, N'6. Р“СЂР°С„РёРєРё Р·РЅР°С‡РµРЅРёР№ Р”Р¦ С‡РёСЃС‚С‹Р№ С†РёРєР» | Charts of BF clean cycle', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fWater+supply%2fWater_supply_charts_BF_Clean_cycle&amp;rs%3aCommand=Render', N'node', 42, 61)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 62, N'7. Р“СЂР°С„РёРєРё Р·РЅР°С‡РµРЅРёР№ РіР°Р·РѕРѕС‡РёСЃС‚РѕРє 3,4 | Charts of gas cleaner 3,4', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fWater+supply%2fWater_supply_tables_gas_filter_BF&rs:Command=Render', N'node', 42, 62)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 63, N'РџСЂРѕС‚РѕРєРѕР» СЃРјРµРЅС‹ РїРµС‡РЅР°СЏ РіСЂСѓРїРїР°', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fRolling%2frolling_heating_weight&amp;rs%3aCommand=Render', N'node', 40, 63)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 64, N'Р’РЅРµРґСЂРµРЅРёРµ РїСЂРѕРµРєС‚Р° РџР‘Р“Рџ | Labels Project tracking', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fRolling%2flabels_implementation&amp;rs%3aCommand=Render', N'node', 40, 64)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 68, N'DMS РїР°СЂР°РјРµС‚СЂС‹ РџР” | DMS Rolling Mills Params', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fRolling%2fRD_DMS_technological_parameters&amp;rs%3aCommand=Render', N'node', 40, 68)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 69, N'РњРѕРЅРёС‚РѕСЂРёРЅРі СЂР°Р±РѕС‚С‹ РјРѕРґРµР»Рё MPC | Work monitoring MPC model ', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fHot+Rolling%2fMPC_DMS&amp;rs%3aCommand=Render', N'node', 40, 69)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 70, N'РСЃРїРѕР»СЊР·РѕРІР°РЅРёРµ Р±РёСЂРѕРє РЅР° РїСЂРѕРєР°С‚РЅС‹С… СЃС‚Р°РЅР°С…', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fRolling%2flabels_count&amp;rs%3aCommand=Render', N'node', 40, 70)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 71, N'DMS Р°РЅР°Р»РёС‚РёРєР° СЂР°Р±РѕС‚С‹ РџР” | DMS Analytics work RD', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fRolling%2fRD_DMS_analytics&amp;rs%3aCommand=Render', N'node', 40, 71)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 72, N'РђРЅР°Р»РёР· СЂР°Р±РѕС‚С‹ СЃРёСЃС‚РµРјС‹ РїРµС‡Р°С‚Рё Р±РёСЂРѕРє РЅР° РњРЎ-1', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fRolling%2flabels_analysis_LSM-1&amp;rs%3aCommand=Render', N'node', 40, 72)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 73, N'РџСЂРѕСЃР»РµР¶РёРІР°РµРјРѕСЃС‚СЊ РјРµС‚Р°Р»Р»РѕР»РѕРјР° | Scrap Tracking', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSteelmaking%2fScrapTrackingEffect&amp;rs%3aCommand=Render', N'node', 39, 73)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 74, N'РџСЂРѕРµРєС‚ "РњРёРєСЃРµСЂ" | Mixer Project', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSteelmaking%2fMixerProjectEffect&amp;rs%3aCommand=Render', N'node', 39, 74)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 75, N'РџСЂРѕРµРєС‚ С‚Р°СЂРёСЂРѕРІР°РЅРёСЏ Р°РіР»РѕС…РѕРїРїРµСЂРѕРІ | Sinter wagon taring project', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSinter+and+Blast%2fHopperTaringTrackingEffect&amp;rs%3aCommand=Render', N'node', 39, 75)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 76, N'РџСЂРѕРµРєС‚ "РЈРіР»РµСЂРѕРґ" | Carbon Project', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSteelmaking%2fCarbonProjectEffect&amp;rs%3aCommand=Render', N'node', 39, 76)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 77, N'РџР°СЃРїРѕСЂС‚ РїР»Р°РІРєРё РњРќР›Р—', N'none', N'folder', 38, 77)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 78, N'РџР°СЃРїРѕСЂС‚ РїР»Р°РІРєРё РЈРџРљ', N'none', N'folder', 38, 78)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 79, N'РҐРёРј. Р°РЅР°Р»РёР· СЃС‚Р°Р»Рё', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSteelmaking%2f%u041e%u0442%u0447%u0435%u0442+%u041c%u041d%u041b%u0417+(%u0410%u043d%u0430%u043b%u0438%u0437+%u0441%u0442%u0430%u043b%u0438)&amp;rs%3aCommand=Render', N'node', 77, 79)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 80, N'РҐРёРјРёС‡РµСЃРєРёР№ Р°РЅР°Р»РёР· С€Р»Р°РєР°', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSteelmaking%2f%u041e%u0442%u0447%u0435%u0442+%u0423%u041f%u041a+(%u0410%u043d%u0430%u043b%u0438%u0437+%u0448%u043b%u0430%u043a%u0430)&amp;rs%3aCommand=Render', N'node', 78, 80)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 81, N'РҐРёРјРёС‡РµСЃРєРёР№ Р°РЅР°Р»РёР· СЃС‚Р°Р»Рё', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSteelmaking%2f%u041e%u0442%u0447%u0435%u0442+%u0423%u041f%u041a+(%u0410%u043d%u0430%u043b%u0438%u0437+%u0441%u0442%u0430%u043b%u0438)&amp;rs%3aCommand=Render', N'node', 78, 81)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 82, N'РћС‚С‡РµС‚ РЈРџРљ', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSteelmaking%2f%u041e%u0442%u0447%u0435%u0442+%u0423%u041f%u041a+%u043e%u0431%u0449%u0438%u0439&amp;rs%3aCommand=Render', N'node', 78, 82)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 83, N'РљР¦ в„–1', N'none', N'folder', 37, 83)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 84, N'РЈРџР¦', N'none', N'folder', 37, 84)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 85, N'Р¦РЎРћ', N'none', N'folder', 37, 85)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 86, N'РЈС‡РµС‚ СЌРЅРµСЂРіРµС‚РёС‡РµСЃРєРёС… РїР°СЂР°РјРµС‚СЂРѕРІ', N'none', N'folder', 37, 86)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 87, N'Р“СЂР°С„РёРєРё', N'none', N'folder', 83, 87)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 88, N'РўР°Р±Р»РёС†С‹', N'none', N'folder', 83, 88)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 89, N'Р“СЂР°С„РёРєРё', N'none', N'folder', 84, 89)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 90, N'РўР°Р±Р»РёС†С‹', N'none', N'folder', 84, 90)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 91, N'РњРѕРґРµР»СЊ С€РёС…С‚РѕРІРєРё | Model Charge', N'none', N'delete', 36, 91)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 92, N'РўР°Р±Р»РёС†С‹', N'none', N'folder', 36, 92)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 93, N'Р“СЂР°С„РёРєРё | Charts', N'none', N'folder', 36, 93)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 94, N'Р“СЂР°С„РёРєРё СЃСЂРµРґРЅРµСЃСѓС‚РѕС‡РЅС‹Рµ | Charts every day', N'none', N'delete', 36, 94)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 95, N'Р“СЂР°С„РёРєРё СЃСЂРµРґРЅРµРјРµСЃСЏС‡РЅС‹Рµ | Charts every month', N'none', N'delete', 36, 95)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 96, N'Р“СЂР°С„РёРєРё СЃСЂРµРґРЅРµРіРѕРґРѕРІС‹Рµ | Charts every year', N'none', N'delete', 36, 96)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 97, N'РњРёРєСЃРµСЂРЅРѕРµ РѕС‚Рґ. | Mixer yard', N'none', N'folder', 36, 97)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 98, N'РћС‚С‡РµС‚ РїРѕ СЂР°Р±РѕС‚Рµ РђРЎРЈ РЁРљ', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSteelmaking%2f%u041e%u0442%u0447%u0435%u0442+%u043f%u043e+%u0440%u0430%u0431%u043e%u0442%u0435+%u0410%u0421%u0423%u0428%u041a&amp;rs%3aCommand=Render', N'node', 36, 98)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 99, N'Р“СЂР°С„РёРє С‚РµС…РЅРѕР»РѕРіРёС‡РµСЃРєРёС… РѕРїРµСЂР°С†РёР№', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSteelmaking%2fMixer_stages&amp;rs%3aCommand=Render', N'node', 97, 99)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 100, N'Р“СЂР°С„РёРє С„РёРєСЃР°С†РёСЏ РІРµСЃР° С‡СѓРіСѓРЅР°', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSteelmaking%2fMixer_weighings&amp;rs%3aCommand=Render', N'node', 97, 100)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 101, N'РџСЂРёС‡РёРЅС‹ РґРѕРґСѓРІРѕРє', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSteelmaking%2f%u0420%u0430%u0441%u043f%u0440%u0435%u0434%u0435%u043b%u0435%u043d%u0438%u0435+%u0434%u043e%u0434%u0443%u0432%u043e%u043a&amp;rs%3aCommand=Render', N'node', 93, 101)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 102, N'Р Р°СЃС…РѕРґ N2 РЅР° РљР¦ | Flow N2 on BOF', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSteelmaking%2fFlow+N2+on+BOF&amp;rs%3aCommand=Render', N'node', 93, 102)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 103, N'РЎСѓС‚РѕС‡РЅС‹Р№ РѕС‚С‡РµС‚ РєРѕРЅС‚. Р»Р°Р±. Р±Р»РѕРє в„–1', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSteelmaking%2f%u041e%u0442%u0447%u0435%u0442+%u043f%u043e+%u043a%u043e%u043d%u0442%u0435%u0439%u043d%u0435%u0440.%u043b%u0430%u0431.%u21161&amp;rs%3aCommand=Render', N'node', 92, 103)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 104, N'Р›РёРЅРґРµ РіР°Р· | Linde gas', N'none', N'folder', 35, 104)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 105, N'РџРѕС‡Р°СЃРѕРІС‹Р№ РѕС‚С‡РµС‚ РљРўРљ | KTK hourly report', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fEnergy%2fOxygenPlant_KTK_hour_report&amp;rs%3aCommand=Render', N'node', 35, 105)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 107, N'РЎСѓС‚РѕС‡РЅС‹Р№ СЂР°СЃС…РѕРґ Рћ2 | Daily flow O2', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fEnergy%2fOxygenPlant_daily_report&amp;rs%3aCommand=Render', N'node', 35, 107)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 108, N'РџРѕС‡Р°СЃРѕРІРѕР№ РѕС‚С‡РµС‚ Рћ2 | Hourly report O2', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fEnergy%2fOxygenPlant_hour_report&amp;rs%3aCommand=Render', N'node', 35, 108)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 109, N'РљРёСЃР»РѕСЂРѕРґРЅРѕРµ РїСЂ-РІРѕ РћРЅР»Р°Р№РЅ | Oxygen plant online', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fEnergy%2fOxygenPlant_online&amp;rs%3aCommand=Render', N'node', 35, 109)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 110, N'РЎРІРѕРґРЅС‹Р№ РѕС‚С‡РµС‚ Р›РёРЅРґРµ Р“Р°Р· | Summary report Linde Gas', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fEnergy%2fLindeGasReport&amp;rs%3aCommand=Render', N'node', 104, 110)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 111, N'Р›РёРЅРґРµ Р“Р°Р· РѕРЅР»Р°Р№РЅ | Linde Gas online', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fEnergy%2fLindeGas_online&amp;rs%3aCommand=Render', N'node', 104, 111)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 112, N'Р›РёРЅРґРµ Р“Р°Р· С‚РµРєСѓС‰РёРµ РїР°СЂР°РјРµС‚СЂС‹ | Linde Gas current', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fEnergy%2fLindeGas_current&amp;rs%3aCommand=Render', N'node', 104, 112)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 113, N'РџРѕС‡Р°СЃРѕРІС‹Р№ РѕС‚С‡РµС‚ O2 | Hourly report O2', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fEnergy%2fTEC_hour_report&amp;rs%3aCommand=Render', N'node', 34, 113)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 114, N'РЎРџР¦-1', N'none', N'folder', 33, 114)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 115, N'РўР°Р±Р»РёС†С‹ | Tables', N'none', N'folder', 32, 115)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 116, N'Р“СЂР°С„РёРєРё | Charts', N'none', N'folder', 32, 116)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 119, N'РРЅС‚РµСЂРІР°Р» РїРµСЂРµРјРµС‰РµРЅРёСЏ РєРѕРІС€РµР№ РјРµР¶РґСѓ РђР”Р” Рё РЎР”', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSinter+and+Blast%2f%u0418%u043d%u0444%u043e%u0440%u043c%u0430%u0446%u0438%u044f+%u043f%u043e+%u0434%u043e%u043c%u0435%u043d%u043d%u044b%u043c+%u043a%u043e%u0432%u0448%u0430%u043c+%u0441+%u0447%u0443%u0433%u0443%u043d%u043e%u043c&amp;rs%3aCommand=Render', N'node', 32, 119)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 122, N'BF parameters', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fManagers%2fBF_parameters&amp;rs%3aCommand=Render', N'node', 115, 122)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 124, N'Р•Р¶РµСЃСѓС‚РѕС‡РЅС‹Р№ СЂР°РїРѕСЂС‚ РїРѕ Р”Рџ | Daily report of BF', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fManagers%2fEveryday+report+BF+graf&rs:Command=Render', N'node', 32, 124)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 125, N'РўРµС…РЅРѕР»РѕРіРёС‡РµСЃРєРёРµ РїР°СЂР°РјРµС‚СЂС‹ Р”Р¦-1,2 | BF shop technological parameters', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fManagers%2fBF_Tech_Params_matrix&amp;rs%3aCommand=Render', N'node', 32, 125)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 127, N'РЈСЂРѕРІРµРЅСЊ Р·Р°СЃС‹РїРё РїРµС‡Рё | BF burden level', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fManagers%2fBF_burden+level&amp;rs%3aCommand=Render', N'node', 116, 127)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 128, N'Р Р°РїРѕСЂС‚ РїРѕ Р”Рџ | Report of BF', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSinter+and+Blast%2fEveryday+report+BF&amp;rs%3aCommand=Render', N'node', 115, 300)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 129, N'Р”РёСЃРїРµС‚С‡РµСЂСЃРєРёР№ РѕС‚С‡РµС‚ | Dispatcher report', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fManagers%2fDispatcher_report_English&amp;rs%3aCommand=Render', N'node', 32, 129)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 131, N'Р Р°СЃС…РѕРґ С…РѕР»РѕРґРЅРѕРіРѕ РґСѓС‚СЊСЏ | Cold blast flow', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fManagers%2fBF_Cold+blast+flow&amp;rs%3aCommand=Render', N'node', 116, 131)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 132, N'РўРµРѕСЂРµС‚РёС‡РµСЃРєР°СЏ С‚РµРјРїРµСЂР°С‚СѓСЂР° РіРѕСЂРµРЅРёСЏ РїРѕ Р”Рџ | Theoretical burn temperature of BF', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fManagers%2fTheoretical+burn+temperature+BF-9&amp;rs%3aCommand=Render', N'node', 116, 132)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 134, N'DMS Р‘Р°Р»Р°РЅСЃ РІСЂРµРјРµРЅРё СЂР°Р±РѕС‚С‹ | DMS Working time balance', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fDevelop%2fRolling%2fRD_DMS_analytic_TimeOfWorking&rs:Command=Render', N'node', 40, 134)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 135, N'РћС‚С‡РµС‚ РїРѕ С„РµСЂСЂРѕСЃРїР»Р°РІР°Рј | Report ferroalloys', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSteelmaking%2freport_ferroalloys&rs:Command=Render', N'node', 44, 135)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 136, N'РЈС‡РµС‚ РїСЂРѕСЃС‚РѕРµРІ РљР¦-3 СЃС‚Р°РґРёРё | DMS BOF-3 stages', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSteelmaking%2fdms_steelmaking_stages&rs:Command=Render', N'node', 41, 136)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 137, N'ARMP РґР°РЅРЅС‹Рµ РїРµСЂРµРґР°РІР°РµРјС‹Рµ РІ SAP | ARMP data transferred to SAP', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fRolling%2fRD_DMS_compraison_sending_data_for_SAP_between_product_test_servers&rs:Command=Render', N'node', 41, 137)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 138, N'РџРѕС‡Р°СЃРѕРІС‹Р№ РѕС‚С‡РµС‚ РїРѕ РїР°СЂСѓ | Hourly report steam', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fEnergy%2fLindeGas_steam_hour_report&rs:Command=Render', N'node', 104, 138)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 139, N'РћС‚С‡РµС‚ РњРќР›Р—', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSteelmaking%2f%d0%9e%d1%82%d1%87%d0%b5%d1%82+%d0%9c%d0%9d%d0%9b%d0%97+%d0%be%d0%b1%d1%89%d0%b8%d0%b9&rs:Command=Render', N'node', 77, 139)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 140, N'Р Р°СЃС…РѕРґ Рћ2 РЅР° РїР»Р°РІРєСѓ РљР¦ | Flow O2 for heat BOF', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSteelmaking%2fBOF_Flow_O2_for+heat&rs:Command=Render', N'node', 93, 140)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 141, N'РљСЂРёСЃС‚Р°Р»Р»РёР·Р°С‚РѕСЂ/Р“РёР»СЊР·Р°', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSteelmaking%2fMNLZ_Kristallizator_Gilza&rs:Command=Render', N'node', 77, 141)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 142, N'РўРµС…РЅРѕР»РѕРіРёС‡РµСЃРєРёРµ РїР°СЂР°РјРµС‚СЂС‹ СЃСЂРµРґРЅРёРµ Р·Р° С‡Р°СЃ', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSinter+and+Blast%2fTechnological+parameters+average_per_hour&rs:Command=Render', N'node', 115, 142)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 143, N'РЎРїР»Р°РІС‹ Рё РґРѕР±Р°РІРєРё РЅР° РїРѕСЂС†РёСЋ', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSteelmaking%2fUPK_SplavDobav_porc&rs:Command=Render', N'node', 78, 143)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 144, N'РЎРїР»Р°РІС‹ Рё РґРѕР±Р°РІРєРё РѕР±С‰РёРµ', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSteelmaking%2fUPK_SplavDobav_All&rs:Command=Render', N'node', 78, 144)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 145, N'РџСЂРѕРґСѓРІРєР° РїР»Р°РІРѕРє СЃ РЅРµСЃРѕРѕС‚РІРµС‚СЃС‚РІРёСЏРјРё РїРѕ Рћ2', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSteelmaking%2f%d0%9a%d0%a6_%d0%9f%d0%bb%d0%b0%d0%b2%d0%ba%d0%b8+%d1%81+%d0%bd%d0%b5%d1%81%d0%be%d0%be%d1%82%d0%b2%d0%b5%d1%82%d1%81%d1%82%d0%b2%d0%b8%d0%b5%d0%bc+%d0%bf%d0%be+%d0%9e2&rs:Command=Render', N'node', 92, 145)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 146, N'РџР°СЂР°РјРµС‚СЂС‹ РЅР°РіСЂРµРІР°С‚РµР»СЊРЅС‹С… РїРµС‡РµР№ РїСЂРѕРєР°С‚РЅС‹С… СЃС‚Р°РЅРѕРІ', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fRolling%2froling_parameters_monitoring&rs:Command=Render', N'node', 40, 146)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 147, N'РљР Рџ РљР¦ С‚РµРєСѓС‰РёРµ РїР°СЂР°РјРµС‚СЂС‹ | BOF ODU current', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fEnergy%2fLindeGas_KRP_current&rs:Command=Render', N'node', 35, 147)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 148, N'РљРёСЃР»РѕСЂРѕРґ Рљ1-6', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSteelmaking%2fOxygen_BOF1-6&rs:Command=Render', N'node', 93, 148)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 149, N'РљРёСЃР»РѕСЂРѕРґ Рљ1-6', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSteelmaking%2fOxygen_BOF1-6&rs:Command=Render', N'node', 35, 149)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 150, N'Р­РЅРµСЂРіРµС‚РёС‡РµСЃРєРёР№ РґРµРїР°СЂС‚Р°РјРµРЅС‚ | Energy Department', N'none', N'folder', NULL, 150)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 151, N'Р’РёР·СѓР°Р»РёР·Р°С†РёСЏ O2 | Dashboard O2', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fEnergy%2fDashboard_O2&rs:Command=Render', N'node', 150, 151)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 159, N'Agbor', N'none', N'folder', 35, 159)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 160, N'РџРѕС‡Р°СЃРѕРІРѕР№ Р±Р°Р»Р°РЅСЃРѕРІС‹Р№ РѕС‚С‡РµС‚ РїРѕ Рћ2', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fEnergy%2fgcCommonBalanceOxy&rs:Command=Render', N'node', 159, 173)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 161, N'РџРѕС‡Р°СЃРѕРІРѕР№ РѕС‚С‡РµС‚ РїРѕ РџР Р’', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fEnergy%2fgcCommonReport&rs:Command=Render', N'node', 159, 201)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 162, N'Р Р°СЃС…РѕРґ С…РѕР»РѕРґРЅРѕРіРѕ РґСѓС‚СЊСЏ Р”Рџ | Cold blast flow', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fManagers%2fBF_Cold+blast+flow&amp;rs%3aCommand=Render', N'node', 150, 162)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 165, N'Р’РѕРґРѕСЃРЅР°Р±Р¶РµРЅРёРµ | Water supply', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fEnergy%2fWater_supply_tables_for_ED&rs:Command=Render', N'node', 150, 165)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 166, N'РљРёСЃР»РѕСЂРѕРґ Рљ1-6 | Oxygen BOF1-6', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSteelmaking%2fOxygen_BOF1-6&rs:Command=Render', N'node', 150, 166)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 168, N'РџРѕС‡Р°СЃРѕРІС‹Р№ РѕС‚С‡РµС‚ РїРѕ СЃР¶. РІРѕР·РґСѓС…Сѓ | Hourly air balance', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fEnergy%2fgcCommonBalanceAir&rs:Command=Render', N'node', 159, 199)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 169, N'РџРѕС‡Р°СЃРѕРІС‹Р№ РѕС‚С‡РµС‚ РїРѕ Р°Р·РѕС‚Сѓ | Hourly nitrogen balance', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fEnergy%2fgcCommonBalanceNitro&rs:Command=Render', N'node', 159, 200)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 170, N'РўРµРєСѓС‰РёРµ РїРѕРєР°Р·Р°РЅРёСЏ РїРѕ СЃР¶. РІРѕР·РґСѓС…Сѓ | Current air parameters', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fEnergy%2fgcCurrAir&rs:Command=Render', N'node', 159, 170)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 171, N'РџРµСЂРµС€РёС…С‚РѕРІРєРё | Burden change', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSinter+and+Blast%2fBF_shihta_total&rs:Command=Render', N'node', 115, 171)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 173, N'Р Р°СЃРїСЂРµРґРµР»РµРЅРёРµ Рћ2 | O2 distribution', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fEnergy%2fgcCurrOxy&rs:Command=Render', N'node', 159, 160)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 175, N'РўРµРјРїРµСЂР°С‚СѓСЂР° РєРѕР»РѕС€РЅРёРєРѕРІРѕРіРѕ РіР°Р·Р° РІ РіР°Р·РѕС…РѕРґР°С… Р”Рџ-9 | BF9_Top gas temperature in gas pipe', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSinter+and+Blast%2fBF9_Top+gas+temperature+in+gas+pipe&rs:Command=Render', N'node', 116, 175)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 176, N'Р­РЅРµСЂРіРµС‚РёС‡РµСЃРєРёРµ РїРѕРєР°Р·Р°С‚РµР»Рё | Energy characteristics', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSinter+and+Blast%2fBF_energy_characteristics&rs:Command=Render', N'node', 115, 176)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 177, N'РўРµРјРїРµСЂР°С‚СѓСЂР° РіРѕСЂСЏС‡РµРіРѕ РґСѓС‚СЊСЏ | Temperature hot blast', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSinter+and+Blast%2fBF_Temperature_hot_blast&rs:Command=Render', N'node', 116, 177)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 178, N'РўРµРјРїРµСЂР°С‚СѓСЂР° РєРѕР»РѕС€РЅРёРєРѕРІРѕРіРѕ РіР°Р·Р° | Top gas temperature', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSinter+and+Blast%2fBF_Temperature_top_gas&rs:Command=Render', N'node', 116, 178)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 179, N'РўРµРјРїРµСЂР°С‚СѓСЂР° С‡СѓРіСѓРЅР° | Temperature HM', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSinter+and+Blast%2fBF_Temperature_HM&rs:Command=Render', N'node', 116, 179)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 181, N'Р”Р°РІР»РµРЅРёРµ РєРѕР»РѕС€РЅРёРєРѕРІРѕРіРѕ РіР°Р·Р° | Top gas pressure', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSinter+and+Blast%2fBF_Pressure_top_gas&rs:Command=Render', N'node', 116, 181)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 182, N'Р”Р°РІР»РµРЅРёРµ РіРѕСЂСЏС‡РµРіРѕ РґСѓС‚СЊСЏ | Hot Blow pressure', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSinter+and+Blast%2fBF_Pressure_HotBlow&rs:Command=Render', N'node', 116, 182)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 183, N'РџРµСЂРµРїР°Рґ РґР°РІР»РµРЅРёСЏ | Delta pressure', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSinter+and+Blast%2fBF_Delta_Pressure&rs:Command=Render', N'node', 116, 183)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 184, N'РђРіР»РѕРґРѕРјРµРЅРЅС‹Р№ РґРµРїР°СЂС‚Р°РјРµРЅС‚ | Ironmaking Department', N'none', N'folder', NULL, 29)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 185, N'РЎС‚Р°Р»РµРїР»Р°РІРёР»СЊРЅС‹Р№ РґРµРїР°СЂС‚Р°РјРµРЅС‚ | Steelmaking Department', N'none', N'folder', NULL, 40)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 186, N'Р Р°СЃС…РѕРґ РєРѕР»РѕС€РЅРёРєРѕРІРѕРіРѕ РіР°Р·Р° РЅР° РІС‹С…РѕРґРµ | Top gas flow at the out', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSinter+and+Blast%2fBF_Flow+top+gas_out&rs:Command=Render', N'node', 116, 186)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 187, N'Р Р°СЃС…РѕРґ РїСЂРёСЂРѕРґРЅРѕРіРѕ РіР°Р·Р° | Natural gas flow', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSinter+and+Blast%2fBF_Flow_natural+gas&rs:Command=Render', N'node', 116, 187)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 189, N'РЎРѕРґРµСЂР¶Р°РЅРёРµ Рћ2 РІ РґСѓС‚СЊРµ | Percent O2 in blow', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSinter+and+Blast%2fBF_Percent_O2+in+blow&rs:Command=Render', N'node', 116, 189)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 191, N'РљРѕР»РѕС€РЅРёРєРѕРІС‹Р№ РіР°Р· | Top gas', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSinter+and+Blast%2fBF_Top+gas&rs:Command=Render', N'node', 116, 191)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 194, N'Р Р°СЃС…РѕРґ O2 | Flow oxygen', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSinter+and+Blast%2fBF_Flow+O2&rs:Command=Render', N'node', 116, 194)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 196, N'Р Р°СЃРїСЂРµРґРµР»РµРЅРёРµ С‚РµС…РЅРѕР».Рћ2 | Technol. O2 distribution', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fEnergy%2fgcCurrOxy_technologic&rs:Command=Render', N'node', 159, 168)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 197, N'РџСЂРѕРєР°С‚РЅС‹Р№ РґРµРїР°СЂС‚Р°РјРµРЅС‚ | Rolling Mill', N'none', N'folder', 29, NULL)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 198, N'РЎРёСЃС‚РµРјР° Totus | System Totus', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fRolling%2ftotus_main&amp;rs%3aCommand=Render', N'node', 197, NULL)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 199, N'РўРµРєСѓС‰РёРµ РїРѕРєР°Р·Р°РЅРёСЏ РїРѕ Р°Р·РѕС‚Сѓ | Current nitrogen parameters', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fEnergy%2fgcCurrNitro&rs:Command=Render', N'node', 159, 169)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 200, N'Р Р°СЃРїСЂРµРґРµР»РµРЅРёРµ С‚РµС…РЅРёС‡.Рћ2 | Technical O2 distribution', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fEnergy%2fgcCurrOxy_technic&rs:Command=Render', N'node', 159, 161)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 201, N'РџРѕС‡Р°СЃРѕРІРѕР№ РѕС‚С‡РµС‚ РїРѕ РїР°СЂР°РјРµС‚СЂР°Рј Рћ2', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fEnergy%2fgcCommonParamsOxy&rs:Command=Render', N'node', 159, 196)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 202, N'РЎСЂРµРґРЅРёР№ РІРµСЃ РЅР°Р»РёРІР° РєРѕРІС€РµР№ РїРѕ Р”Р¦-1 Рё Р”Р¦-2', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSinter+and+Blast%2f%d0%a1%d1%80%d0%b5%d0%b4%d0%bd%d0%b8%d0%b9+%d0%b2%d0%b5%d1%81+%d0%bd%d0%b0%d0%bb%d0%b8%d0%b2%d0%b0+%d0%ba%d0%be%d0%b2%d1%88%d0%b5%d0%b9+%d0%bf%d0%be+%d0%94%d0%a6&rs:Command=Render', N'node', 32, NULL)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 203, N'РћР±РѕСЂР°С‡РёРІР°РµРјРѕСЃС‚СЊ РєРѕРІС€РµР№ РїРѕ Р”Р¦-1,2 (РїРѕСЃСѓС‚РѕС‡РЅРѕ) | Tturnover ladles of BF shop 1,2 ', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSinter+and+Blast%2f%d0%9e%d0%b1%d0%be%d1%80%d0%b0%d1%87%d0%b8%d0%b2%d0%b0%d0%b5%d0%bc%d0%be%d1%81%d1%82%d1%8c+%d0%ba%d0%be%d0%b2%d1%88%d0%b5%d0%b9+%d0%bf%d0%be+%d0%94%d0%a6&rs:Command=Render', N'node', 32, NULL)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 204, N'РћС‚С‡РµС‚ РїРѕ СЂР°СЃС…РѕРґСѓ СЌРЅРµСЂРіРѕСЂРµСЃСѓСЂСЃРѕРІ РІ РљР¦ | Energy consumption', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSteelmaking%2fEnergy+consumption&rs:Command=Render', N'node', 36, NULL)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 214, N'РЎСѓС‚РѕС‡РЅС‹Р№ РѕС‚С‡РµС‚ РїРѕ Р·Р°РіСЂСѓР·РєРµ Р”Рџ | BF unload daily report', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSinter+and+Blast%2fdispatch+report+sinter+and+blast&rs:Command=Render', N'node', 184, 407)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 215, N'РћРЎРќРћР’РќРћР• РњР•РќР® РђР”Р” | Sinter & Blast Furnace Department', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSinter+and+Blast%2fSBFD_main&rs:Command=Render', N'node', 184, 400)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 218, N'РћРЎРќРћР’РќРћР• РњР•РќР® РљРҐРџ | Coke Plant Department', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fCoke%2fCoke_main&rs:Command=Render', N'node', 37, NULL)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 219, N'РџРѕС‡Р°СЃРѕРІС‹Р№ РѕС‚С‡РµС‚ РљР Рџ РњР°СЂС‚РµРЅР° | Hourly report Marten ODU', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fEnergy%2fMarten_hour_report&rs:Command=Render', N'node', 35, 148)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 222, N'Р”РёСЃРїРµС‚С‡РµСЂСЃРєР°СЏ РїР°РЅРµР»СЊ РђР”Р”', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSinter+and+Blast%2fBF_Dispatcher&rs:Command=Render', N'node', 184, NULL)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 223, N'РќРЎ - 14 С‡Р°СЃРѕРІРѕР№ РѕС‚С‡РµС‚', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fWater+supply%2fNS_14&rs:Command=Render', N'node', 42, 170)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 224, N'РќРЎ - 15 С‡Р°СЃРѕРІРѕР№ РѕС‚С‡РµС‚', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fWater+supply%2fNS_15&rs:Command=Render', N'node', 42, 172)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 229, N'РЎС‚Р°РЅС†РёСЏ РЅР°РїРѕР»РЅРµРЅРёСЏ Р±Р°Р»Р»РѕРЅРѕРІ | Ballons Station', N'none', N'folder', 35, 152)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 233, N'Ballons_Report_Month', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fEnergy%2fBallons_Report_Month&rs:Command=Render', N'node', 229, NULL)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 234, N'Ballons_Report_KrXe', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fEnergy%2fBallons_Report_KrXe&rs:Command=Render', N'node', 229, NULL)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 235, N'Ballons_Report_NeHe', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fEnergy%2fBallons_Report_NeHe&rs:Command=Render', N'node', 229, NULL)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 236, N'Ballons_Sert_KrXe', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fEnergy%2fBallons_Sert_KrXe&rs:Command=Render', N'node', 229, NULL)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 237, N'Ballons_Sert_NeHe', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fEnergy%2fBallons_Sert_NeHe&rs:Command=Render', N'node', 229, NULL)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 238, N'РќРЎ - 14 РіСЂР°С„РёРєРё', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fWater+supply%2fReport%20_NS_14_Trends&rs:Command=Render', N'node', 42, 171)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 239, N'РќРЎ - 15 РіСЂР°С„РёРєРё', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fWater+supply%2fReport%20_NS_15_Trends&rs:Command=Render', N'node', 42, 173)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 243, N'Dashboard for export', N'none', N'folder', 29, NULL)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 244, N'Р”РѕРјРµРЅРЅРѕРµ РїСЂРѕРёР·РІРѕРґСЃС‚РІРѕ | Blast-Furnace plant', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSteelmaking%2fTechnicalDepartment_Dashboard_BF_all_graf&rs:Command=Render', N'node', 243, NULL)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 245, N'РЎС‚Р°Р»РµРїР»Р°РІРёР»СЊРЅРѕРµ РїСЂРѕРёР·РІРѕРґСЃС‚РІРѕ | Blast Oxigen Furnace plant', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSteelmaking%2fTechnicalDepartment_Dashboard_BOF_all_graf&rs:Command=Render', N'node', 243, NULL)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 248, N'РџСЂРѕРєР°С‚РЅРѕРµ РїСЂРѕРёР·РІРѕРґСЃС‚РІРѕ | Rolling plant', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSteelmaking%2fTechnicalDepartment_Dashboard_Rolling_Mill_all_graf&rs:Command=Render', N'node', 243, NULL)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 250, N'РџРѕС‚СЂРµР±Р»РµРЅРёРµ СЌРЅРµСЂРіРѕСЂРµСЃСѓСЂСЃРѕРІ РЅР° Р”РџРЈ-3 | Consumption of energy resources', N'none', N'folder', 150, NULL)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 251, N'РћС‚С‡РµС‚ РїРѕ РїРѕС‚СЂРµР±Р»РµРЅРёСЋ СЌРЅРµСЂРіРѕСЂРµСЃСѓСЂСЃРѕРІ РЅР° Р”РџРЈ-3 (РїРѕСЃСѓС‚РѕС‡РЅС‹Р№) | Report on energy consumption at DP-3 (daily)', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fEnergy%2fDPU3_Steam_flow_daily&rs:Command=Render', N'node', 250, NULL)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 252, N'РћС‚С‡РµС‚ РїРѕ РїРѕС‚СЂРµР±Р»РµРЅРёСЋ СЌРЅРµСЂРіРѕСЂРµСЃСѓСЂСЃРѕРІ РЅР° Р”РџРЈ-3 (РїРѕС‡Р°СЃРѕРІС‹Р№) | Report on energy consumption at DP-3 (hourly)', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fEnergy%2fDPU3_Steam_flow_hour&rs:Command=Render', N'node', 250, NULL)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 255, N'РћС‚С‡РµС‚ РїРѕ СЂР°СЃС…РѕРґСѓ РІРѕРґС‹ РЅР° РџР“РћРЈ РљР¦', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fWater+supply%2fWater_supply_GCPB2&rs:Command=Render', N'node', 42, 241)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 256, N'РџР°СЂР°РјРµС‚СЂС‹ РџР“РћРЈ | GCP Parameters', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fDevelop%2fSteelmaking%2fGCP_K5_v2&rs:Command=Render', N'node', 93, NULL)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 258, N'Р“РћР РЇР§Р•Р• Р”РЈРўР¬Р• | HOT BLOW', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSinter+and+Blast%2fBF_HotBlow&rs:Command=Render', N'node', 116, 258)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 260, N'РћСЃРЅРѕРІРЅС‹Рµ СЌРЅРµСЂРіРµС‚РёС‡РµСЃРєРёРµ РїР°СЂР°РјРµС‚СЂС‹ | Main energy parameters', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fEnergy%2fMain_energy_parameters&rs:Command=Render', N'node', 150, 259)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 261, N'РћС‚С‡РµС‚ Рѕ СЂР°Р±РѕС‚Рµ РєРѕРЅРІРµСЂС‚РµСЂРѕРІ (РїРѕС‡Р°СЃРѕРІС‹Р№) | Hourly report of BOF working', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSteelmaking%2fBOF_work_report_hour&rs:Command=Render', N'node', 36, NULL)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 262, N'РЎРёСЃС‚РµРјР° "Р Р°Р·РіР°СЂ" | Hearth monitoring', N'https://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fSinter+and+Blast%2fBF_razgar&rs:Command=Render', N'node', 184, NULL)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 263, N'РџР°СЃРїРѕСЂС‚ РџР»Р°РІРєРё | Passport Melting', N'none', N'folder', 40, 43)
+insert into [KRR-PA-GLB-SERVICE].[dbo].visualization_menu ( [id], [name], [link], [type], [parent], [sortid] )values( 264, N'РўРµС…РЅРѕР»РѕРіРёС‡РµСЃРєРёРµ РџР°СЂР°РјРµС‚СЂС‹ | Technological Parameters', N'http://krr-sql-paclx02.europe.mittalco.com/ReportServer_PACLX02/Pages/ReportViewer.aspx?%2fProductivity%2fRolling%2frolling_technological_parameters&rs:Command=Render', N'node', 263, 264)
 
 SET IDENTITY_INSERT [KRR-PA-GLB-SERVICE].[dbo].visualization_menu  OFF;
