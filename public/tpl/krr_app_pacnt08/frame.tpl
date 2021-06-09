@@ -8,10 +8,10 @@
 <LINK href="visalization_files/tree_files/openwebicons-bootstrap.css" rel="stylesheet">
 <LINK href="visalization_files/tree_files/font-awesome.min.css" rel="stylesheet"> -->
 
-<LINK href="styles/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-<LINK href="styles/lightbox/css/lightbox.min.css" rel="stylesheet"> 	 
-<LINK href="styles/openwebicons/css/openwebicons-bootstrap.css" rel="stylesheet">
-<LINK href="styles/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+<LINK href="|site_preffix|styles/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<LINK href="|site_preffix|styles/lightbox/css/lightbox.min.css" rel="stylesheet"> 	 
+<LINK href="|site_preffix|styles/openwebicons/css/openwebicons-bootstrap.css" rel="stylesheet">
+<LINK href="|site_preffix|styles/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
 
 </head>
@@ -145,11 +145,11 @@
 <div id="navigation" style="">
 <!--<a class="btn btn-primary btn-sm" href="" target="rightside" >Menu</a>	-->
 
-<iframe id="leftside" name="leftside" src="/tree"></iframe>			
+<iframe id="leftside" name="leftside" src="|site_preffix|/tree"></iframe>			
 </div>
 	 
 <div id="content" style="">
-<iframe id="rightside" name="rightside" src="/start"></iframe>
+<iframe id="rightside" name="rightside" src="|site_preffix|/start"></iframe>
 <!--
 <iframe hidden name="Dashboard" src=""></iframe>
 <iframe hidden name="Cold" src=""></iframe>
@@ -169,9 +169,9 @@
 <SCRIPT src="start_files/ie10-viewport-bug-workaround.js"></SCRIPT>
 <SCRIPT src="start_files/lightbox.min.js"></SCRIPT>
  -->
-<SCRIPT src="js/jquery-1.12.0.min.js"></SCRIPT>						
-<SCRIPT src="styles/bootstrap/js/bootstrap.min.js"></SCRIPT>						
-<SCRIPT src="styles/lightbox/js/lightbox.min.js"></SCRIPT>
+<SCRIPT src="|site_preffix|js/jquery-1.12.0.min.js"></SCRIPT>						
+<SCRIPT src="|site_preffix|styles/bootstrap/js/bootstrap.min.js"></SCRIPT>						
+<SCRIPT src="|site_preffix|styles/lightbox/js/lightbox.min.js"></SCRIPT>
 <!--===========================================================================================================-->		
 </body>
 </html>

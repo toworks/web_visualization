@@ -70,6 +70,7 @@ sub call {
         my $year = strftime("%Y", localtime time());
         $tpl =~ s/\|host\|/$env->{HTTP_HOST}/g;
         $tpl =~ s/\|year\|/$year/g;
+		$tpl =~ s/\|site_preffix\|/\/main\//g;
 
 		my $page = $tpl;
 

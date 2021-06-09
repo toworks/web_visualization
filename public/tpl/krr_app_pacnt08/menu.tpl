@@ -9,7 +9,7 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="|root_url|/">
-              <img id="logo" alt="|host|" src="/tpl/fail/logo.png">
+              <img id="logo" alt="|host|" src="|site_preffix|tpl/fail/logo.png">
           </a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">

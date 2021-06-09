@@ -13,10 +13,10 @@
 					</li></p>
                 </ul>
 				<ul>
-					<img src="/tpl/krr_app_pacnt08/img/factory.png" class="img-responsive center-block">
-					<img src="/tpl/krr_app_pacnt08/img/chart-line.png" class="img-responsive center-block">
-					<img src="/tpl/krr_app_pacnt08/img/chart-bar.png" class="img-responsive center-block">
-					<img src="/tpl/krr_app_pacnt08/img/chart-areaspline.png" class="img-responsive center-block">
+					<img src="|site_preffix|tpl/krr_app_pacnt08/img/factory.png" class="img-responsive center-block">
+					<img src="|site_preffix|tpl/krr_app_pacnt08/img/chart-line.png" class="img-responsive center-block">
+					<img src="|site_preffix|tpl/krr_app_pacnt08/img/chart-bar.png" class="img-responsive center-block">
+					<img src="|site_preffix|tpl/krr_app_pacnt08/img/chart-areaspline.png" class="img-responsive center-block">
 				</ul>
             </div>
         </div>

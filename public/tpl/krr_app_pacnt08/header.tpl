@@ -9,12 +9,12 @@
     <meta name="keywords" content="|keywords|">
     <meta name="description" content="|description|">
     <meta name="author" content="|author|">
-    <link rel="icon" href="/tpl/krr_app_pacnt08/favicon.ico">
+    <link rel="icon" href="|site_preffix|tpl/krr_app_pacnt08/favicon.ico">
 
     <title>|title|</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="/styles/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="|site_preffix|styles/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <!--    <link href="/tpl/krr_app_pacnt08/css/ie10-viewport-bug-workaround.css" rel="stylesheet"> -->
@@ -33,19 +33,19 @@
     <![endif]-->
 
     <!-- lightbox css -->
-    <link href="/styles/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="|site_preffix|styles/lightbox/css/lightbox.min.css" rel="stylesheet">
 
     <!-- openwebicons -->
-    <link href="/styles/openwebicons/css/openwebicons-bootstrap.css" rel="stylesheet">
+    <link href="|site_preffix|styles/openwebicons/css/openwebicons-bootstrap.css" rel="stylesheet">
 
     <!-- google/material-design-icons -->
 <!--    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="/styles/font-awesome-4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="|site_preffix|styles/font-awesome-4.5.0/css/font-awesome.min.css">
 
     <!-- local style -->
-    <link href="/tpl/krr_app_pacnt08/css/style.css" rel="stylesheet">
+    <link href="|site_preffix|tpl/krr_app_pacnt08/css/style.css" rel="stylesheet">
 
   </head>
 
